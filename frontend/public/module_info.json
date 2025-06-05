@@ -1,0 +1,928 @@
+{
+  "CS171": {
+    "scrapedModuleCodeFromPage": "CS171",
+    "title": "COMPUTER SYSTEMS I",
+    "credits": "7.5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Topics from the breadth of computer science, for example, Artificial Intelligence, Computer Vision, Signal processing, machine learning, cryptography, robotics, graphics, information theory, graph theory, visualisation. Tools for the creation of computer and software systems (visual programming systems, web and mobile applications); computational thinking; computational problem-solving.",
+    "learningOutcomes": [
+      "use visual programming tools to create computer systems",
+      "understand the breadth of topics in computer science",
+      "describe in detail a number of specific topics in computer science",
+      "understand what is meant by computational thinking and apply it to solve simple problems",
+      "solve problems by designing algorithms, composing and testing programs"
+    ],
+    "year": 1
+  },
+  "CS172": {
+    "scrapedModuleCodeFromPage": "CS172",
+    "title": "COMPUTER SYSTEMS II",
+    "credits": "7.5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "First Order Logic and proof strategies for reasoning about programs; Basic set and bag definitions, operations, and properties; Using functions to solve problems: to include definitions of function domain, range, image, composition, identity, inverse, abstraction, application, total & partial functions, injections, bijections & surjections; Reasoning using First Order Logic: truth tables, use of conjunction, disjunction, implication, negations, equivalence rules, assertions, tautologies, contradictions, universal and existential quantifiers; Representing natural language in a formal logic and proving the validity of logical statements using proof by contradiction and natural deduction; Programming in a declarative language: knowledge representation, search strategy, unification, recursion, data structures (lists), list processing, simple logic programming.",
+    "learningOutcomes": [
+      "solve problems in computer science applying techniques from discrete mathematics",
+      "outline the basic structure of standard proof techniques",
+      "give examples of standard proof techniques",
+      "use functions to formulate and solve problems",
+      "relate the ideas of mathematical induction to recursion and recursively defined structures",
+      "formulate problems and represent knowledge using first order logic",
+      "write simple programs in a declarative language"
+    ],
+    "year": 1
+  },
+  "CS161": {
+    "scrapedModuleCodeFromPage": "CS161",
+    "title": "INTRODUCTION TO COMPUTER SCIENCE I",
+    "credits": "7.5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This module introduces the main programming concepts, including: variables, types, expressions and assignment; simple I/O; Conditional and iterative control structures (if statements and loops); Strings and string processing; Arrays; User Input; Basic Error Checking and Detection; Basic File Interactions; Use of class APIs for creating objects and calling methods; Problem-solving: understanding and developing algorithms; Implementing algorithms as simple programs. The main numbering systems used by computers will be introduced.Erasmus/Study abroad students:Please note that CS161 and CS162 are designed to be taken together.",
+    "learningOutcomes": [
+      "understand and evaluate simple algorithms;",
+      "create simple algorithms;",
+      "write simple programs;",
+      "comprehend and dissect programs;",
+      "debug runtime errors;",
+      "explain the underlying logical concepts that provide the basis for modern computation;",
+      "explain the fundamentals of computer communications and identify security issues relating to it."
+    ],
+    "year": 1
+  },
+  "CS162": {
+    "scrapedModuleCodeFromPage": "CS162",
+    "title": "INTRODUCTION TO COMPUTER SCIENCE II",
+    "credits": "7.5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Theoretical Computer Science; Languages: regular expressions, context-free grammars, recursive definitions; Automata: finite automata (deterministic and non-deterministic), conversion from grammars to automata, transition graphs, push-down automata; problem-solving: understanding and developing algorithms; Implementing algorithms to apply language definitions and to simulate automaton: iteration, nested iteration, arrays, multidimensional arrays, scope of variables, static methods, defining classes, creating objects, defining and calling instance methods and constructors, parament passing recursion, simple searching and sorting algorithms..Erasmus/Study abroad students:Please note that CS161 and CS162 are designed to be taken together.",
+    "learningOutcomes": [
+      "acknowledge the links between mathematics, science and computer science & appreciate the historical context in which the theory of computer science was developed;",
+      "understand and describe the concept of finite state machines and regular languages;",
+      "write simple programmes in jva using conditional statements, loops, arrays and methods;",
+      "apply problem solving techniques to programming problems;",
+      "choose appropriate representations for problems;",
+      "combine programming constructs to implement simple algorithms;",
+      "compare good and bad implementations and algorithms."
+    ],
+    "year": 1
+  },
+  "MT101SC": {
+    "scrapedModuleCodeFromPage": "MT101SC",
+    "title": "DIFFERENTIAL CALCULUS",
+    "credits": "5",
+    "semester": "1",
+    "department": "MATHEMATICS AND STATISTICS",
+    "overview": "Objectives: To introduce students to Differential Calculus in One Real Variable.Overview: Why study calculus? Sets and Functions. Review of Exponentials, Logarithms and Trigonometry. Inequalities, Limits: Idea of a limit, definition of a limit, continuity. Derivatives: Definition of a derivative, tangents, product rule, chain rule, quotient rule, higher derivatives, implicit differentiation, Newton's method for roots, exponential and logarithmic functions. Applications of derivatives: Maxima and minima, monotonic functions and the first derivative test. Concavity and points of inflection. Symmetry and curve sketching. Applied max-min problems and related rates.",
+    "learningOutcomes": [
+      "Describe and manipulate functions",
+      "Evaluate limits of basic functions.",
+      "Obtain derivatives of basic functions and combinations of such functions.",
+      "Solve max-min problems.",
+      "Use Newton's method",
+      "Sketch curves of the basic functions and combinations of such functions.",
+      "Use the methods from the course to solve problems.",
+      "State definitions and theorems covered in the course."
+    ],
+    "year": 1
+  },
+  "MT102SC": {
+    "scrapedModuleCodeFromPage": "MT102SC",
+    "title": "INTEGRAL CALCULUS",
+    "credits": "5",
+    "semester": "2",
+    "department": "MATHEMATICS AND STATISTICS",
+    "overview": "Objectives: To introduce students to Integral Calculus.Anti-derivatives, area, the definite integral, indefinite integrals, the Fundamental Theorem of Calculus, the substitution rule, areas between curves, inverse functions, inverse trigonometric functions. Techniques of Integration. Tables of integrals, integration by parts, trigonometric integrals, Substitution, integration of rational functions, trapezoidal rule, Simpson's Rule. Applications of Integration: Volumes and surfaces of revolution, length of a curve.",
+    "learningOutcomes": [
+      "Integrate the basic functions and combinations of these functions using standard techniques.",
+      "Use integrals to find areas and volumes.",
+      "Compute an integral numerically to a given degree of accuracy.",
+      "State the Fundamental Theorem of Calculus.",
+      "Use the methods from the course to solve problems.",
+      "State definitions and theorems covered in the course."
+    ],
+    "year": 1
+  },
+  "MT113SC": {
+    "scrapedModuleCodeFromPage": "MT113SC",
+    "title": "LINEAR ALGEBRA 1 (S)",
+    "credits": "5",
+    "semester": "Year-Long",
+    "department": "MATHEMATICS AND STATISTICS",
+    "overview": "Module Objective: To introduce students to linear equations, determinants, vectors, complex numbers and matrices.Overview of coordinate geometry in 1, 2 and 3 dimensions. Describing lines and planes by means of linear equations. Systems of linear equations and augmented matrices. Row echelon form matrices and back substitution. Elementary row operations and Gaussian elimination. Bound and free variables. Matrices and rules of matrix arithmetic. Noncommutativity of matrix product. Determinants of 2 x 2 and 3 x 3 matrices. Determinant of a product. Effect of elementary row operations on determinants. Determinants as areas and volumes. Matrix inverses, in particular 2 x 2 inverses. Overview of vectors in 1, 2 and 3 dimensions. Position and displacement vectors. Triangle and parallelogram laws. Vector arithmetic, norm, distance, dot product and angle, orthogonal projection. The triangle and Cauchy-Schwartz inequalities. The cross product and triple product in 3-dimensions. The normal vector of a plane and the vector equation of a line. Complex numbers and the plane. Other topics, such as the eigenvalues of 2 x 2 matrices, roots of unity, geometric problems, quadratic forms, linear maps via 2 x 2 matrices.",
+    "learningOutcomes": [
+      "Solve a system of linear equations using Gaussian Elimination.",
+      "Perform operations with matrices.",
+      "Compute the determinant of 2 x 2 and 3 x 3 matrices. Find the inverse of a 2 x 2 matrix.",
+      "Draw and understand 2- and 3-dimensional diagrams.",
+      "Perform vector operations, dot products, distance, norms, angles and projections.",
+      "Write down the equation of lines and planes in 2 and 3 dimensions. Coordinatize lines and planes in space.",
+      "Handle the algebra and geometry of complex numbers.",
+      "Use the methods from the course to solve problems. State definitions and theorems covered in the course."
+    ],
+    "year": 1
+  },
+  "BI102": {
+    "scrapedModuleCodeFromPage": "BI102",
+    "title": "BIOLOGICAL FUNCTION & DIVERSITY",
+    "credits": "7.5",
+    "semester": "2",
+    "department": "BIOLOGY",
+    "overview": "Major topics covered include: (i) Introduction to animal evolution, anatomy and physiology; (ii) Introduction to plant diversity, anatomy and physiology and (iii) Introduction to ecology. The animal section focuses on the evolutionary origins, adaptive characteristics and diversity of animals, and gives an introduction to the physiological functions necessary for life. The second part of the course focuses on plants and introduces plant diversity with an emphasis on the diversity and anatomy of flowering plants. Also discussed are plant responses to internal and external stimuli, including plant hormones, and the transport of water and nutrients. The Ecology section reviews succession and climaxes, mineral cycles and energy in ecosystems.",
+    "learningOutcomes": [
+      "Provide an account of factors influencing the adaptation and radiation of vertebrate species.",
+      "Describe major animal systems in terms of anatomy and physiology and the principles underlying the maintenance of homeostasis.",
+      "Describe current views on land plant evolution and the characteristics that define the four main lineages of extant land plants.",
+      "Describe the main types of plant hormones and their role in plant development and physiology and understand how plants respond to different environmental stimuli.",
+      "Describe the functioning of the biogeosphere, including the movement of energy and nutrients within ecosystems and the impact of atmospheric pollution.",
+      "Perform enquiry-based practical work and submit short reports on this work."
+    ],
+    "year": 1
+  },
+  "BI101": {
+    "scrapedModuleCodeFromPage": "BI101",
+    "title": "FROM CELL TO ORGANISM",
+    "credits": "7.5",
+    "semester": "1",
+    "department": "BIOLOGY",
+    "overview": "To provide an introduction to the core concepts and principles in cell biology, biochemistry, genetics, microbiology and evolutionary biology. To introduce practical biology techniques such as microscopy, spectroscopy, DNA and Protein extraction/analysis and bacterial and fungal culture.Topics covered include: structure and function of DNA, RNA and proteins; basic animal and plant cell structure; cell division; diseases of the cell; cellular organelles; cytoskeleton; viral structure and function; bacterial cell structure, growth and control of bacteria; fungal cell structure, fungal diseases; principles of genetics; mitosis and meiosis; patterns of inheritance; transcription and translation; mechanisms of evolution; microscopy.",
+    "learningOutcomes": [
+      "Outline the differences between prokaryotic and eukaryotic cells.",
+      "Describe animal and plant cell structures, organelle function and the components and function of the Endomembrane and Cytoskeletal systems.",
+      "Demonstrate an understanding of the connection between chemical composition and function in biological molecules and macromolecules.",
+      "Describe the defining characteristics, structure and replication abilities of viruses, bacteria and fungi.",
+      "Describe the dominant and recessive patterns of Mendelian inheritance.",
+      "Demonstrate an understanding of the Central Dogma and the relationship between genes and proteins.",
+      "Describe the processes driving evolution at the population level, including the process of speciation."
+    ],
+    "year": 1
+  },
+  "EE121": {
+    "scrapedModuleCodeFromPage": "EE121",
+    "title": "ELECTRONIC ENGINEERING FUNDAMENTALS",
+    "credits": "7.5",
+    "semester": "1",
+    "department": "ELECTRONIC ENGINEERING",
+    "overview": "Aims: To introduce students to the language and methodologies that engineers use to solve problems. To teach students to analyze DC circuits. To provide students with an understanding of charge, electrostatic forces, energy systems (eg. ESB), electrical safety, engineering ethics, environmental responsibility and communications. Indicative syllabus: Introduction and Motivation; Electronics in Society Scientific Notation and Exponents; Engineering Notation; Electricity; Electric Potential and Current Water Models;Voltage and Current; Resistance and Conductance; ResistivityVoltage Division; Current Division; Series and Parallel Circuits; Fundamental Relations: Ohm's Law, Energy, Power;Ideal Circuit Elements; Kirchhoff's Laws; Circuit Theorems: Source Transformations; Thevenin's Theorem; Norton's Theorem; Principle of SuperpositionMulti-loop Circuits; Nodal Analysis; Mesh Analysis;Basic Electronics: Ideal Diodes; PWL diode model; Transistors Simple Circuits; Diodes and FETsBasic Electromagnetics: Charge, Vectors and Coulombs Law and ApplicationsElectrical Safety; Electricity Generation and Distribution; Household Supply; Plugs and FusesEthics and Professional PracticeFor further information please use the following address: http://www.nuim.ie/electronic-engineering/current-students",
+    "learningOutcomes": [
+      "Explain the role of electronics in modern products and society.",
+      "Detail the relationship of current, voltage and power.",
+      "Undertake simple circuit analysis, up to and including Kirchhoff's current law, multi-loop nodal and mesh analysis.",
+      "Design and construct simple electronic circuits.",
+      "Describe household electricity systems.",
+      "Demonstrate knowledge of electrical safety."
+    ],
+    "year": 1
+  },
+  "EE123": {
+    "scrapedModuleCodeFromPage": "EE123",
+    "title": "INTRODUCTION TO SYSTEMS AND CONTROL",
+    "credits": "7.5",
+    "semester": "2",
+    "department": "ELECTRONIC ENGINEERING",
+    "overview": "Please find further information on this module at the web page https://www.maynoothuniversity.ie/electronic-engineering/current-students/module-descriptors",
+    "learningOutcomes": [
+      "Develop mathematical models for a range of simple dynamical systems.",
+      "Represent a mathematical model in transfer function form (using Laplace Transforms).",
+      "Calculate responses of simple dynamical systems.",
+      "Determine the stability of dynamical systems.",
+      "Design proportional and PID controllers for simple systems.",
+      "Use Matlab and Simulink to simulate and analyse dynamical systems."
+    ],
+    "year": 1
+  },
+  "EP101": {
+    "scrapedModuleCodeFromPage": "EP101",
+    "title": "EXPERIMENTAL PHYSICS I",
+    "credits": "7.5",
+    "semester": "1",
+    "department": "PHYSICS",
+    "overview": "This module serves as an introduction to Experimental Physics. Students initially explore concepts of physical measurement before an algebraic approach to analysing motion and forces is outlined. Subsequently both the mechanical and thermometric properties of matter are introduced with simple examples and numerical problems.Topics in introductory astronomy including physics of the Earth, Solar System and large scale Universe, are also covered.This module covers several topics of the Core of Physics, as defined by Institute of Physics, but only at an introductory level.",
+    "learningOutcomes": [
+      "Discuss the nature of physical knowledge, measurement of physical quantities and the use of units in describing the laws of nature.",
+      "Describe the physics of motion and forces (kinematics & dynamics) using an algebraic approach and vectorial description of motion.",
+      "Discuss the basic properties of matter and thermal physics.",
+      "State fundamental concepts and principles of modern astronomy, including the terminology and nomenclature relating to a range of astronomical classification (eg. stellar and galactic).",
+      "Discuss the distance scale of the Universe, the Big Bang theory of origin and the fate of the Universe.",
+      "Discuss the Earth as a planet in terms of its composition, atmosphere and origin.",
+      "Solve simple numerical problems relevant to fundamental mechanics, thermodynamics and astronomy.",
+      "Carry out relevant laboratory experiments to demonstrate and test physical principles and report the results."
+    ],
+    "year": 1
+  },
+  "EP102": {
+    "scrapedModuleCodeFromPage": "EP102",
+    "title": "EXPERIMENTAL PHYSICS II",
+    "credits": "7.5",
+    "semester": "2",
+    "department": "PHYSICS",
+    "overview": "This module serves as further introduction to topics in Experimental Physics, a co-requisite to EP101. Three important topics of electricity and magnetism, light and sound and modern physics are introduced and related modern technology applications are outlined.This module covers several topics of the Core of Physics, as defined by Institute of Physics, but only at an introductory level.",
+    "learningOutcomes": [
+      "Describe the fundamental principles of electricity and magnetism.",
+      "Discuss the techniques required to analyze simple electric circuits.",
+      "Analyze the behaviour of sound and light in various physical situations using the theory of vibrations and waves.",
+      "Describe the operation of a variety of optical instruments using geometrical optics.",
+      "Apply wave-particle duality to the study of a range of physical phenomena at the atomic and sub-atomic level.",
+      "Contrast the classical and quantum mechanical pictures of the atom/nucleus particularly in regard to atomic hydrogen and nuclear decay.",
+      "Solve simple numerical problems relevant to fundamental electricity & magnetism, optics & waves and modern physics.",
+      "Carry out relevant laboratory experiments to demonstrate and test physical principles and report the results."
+    ],
+    "year": 1
+  },
+  "MP110": {
+    "scrapedModuleCodeFromPage": "MP110",
+    "title": "MECHANICS 1 & SPECIAL RELATIVITY",
+    "credits": "7.5",
+    "semester": "1",
+    "department": "PHYSICS",
+    "overview": "Dimensions and units. Linear kinematics and dynamics of a particle and of a system of particles. Principles of momentum and energy. Particle dynamics in more than one dimension. Vector methods. Motion in a circle, motion under constant gravity. Projectile motion. Conservative and Non-conservative forces. Work and potential energy. Motion under a central force. Introduction to special relativity: Postulates of special relativity, Lorentz transformations, spacetime, time dilation, length contraction, Doppler shift.",
+    "learningOutcomes": [
+      "apply the concepts of velocity and acceleration to solving problems in kinetics",
+      "carry out basic vector algebra operations including dot and cross products",
+      "make appropriate use of vectors in the description of physical quantities",
+      "calculate the properties of particles interacting via conservative and non-conservative forces",
+      "formulate and solve problems involving conservative forces and energy conservation",
+      "describe the basic concepts of special relativity and apply them to solving problems involving time dilation and space contraction"
+    ],
+    "year": 1
+  },
+  "MP112": {
+    "scrapedModuleCodeFromPage": "MP112",
+    "title": "MECHANICS 2 & MODERN PHYSICS",
+    "credits": "7.5",
+    "semester": "2",
+    "department": "PHYSICS",
+    "overview": "One and two dimensional dynamics of a system of particles, including collision and impulse. Centre of mass and moment of inertia. Rotational motion: angular velocity, torque, angular momentum. Simple harmonic motion, wave phenomena. Quantum Physics: Photoelectric effect, wave-particle duality, Heisenberg uncertainty principle, Bohr atom.",
+    "learningOutcomes": [
+      "use conservation of momentum to analyse simple collision problems",
+      "describe and calculate the properties of systems undergoing simple harmonic motion",
+      "define the centre of mass for a system of particles or an extended object, and use it to describe the motion of the system as a whole",
+      "apply the concepts of angular velocity, moment of inertia and torque to solve problems involving rotational motion",
+      "describe how the particle nature of light and the wave nature of matter manifest themselves"
+    ],
+    "year": 1
+  },
+  "CS210": {
+    "scrapedModuleCodeFromPage": "CS210",
+    "title": "ALGORITHMS & DATA STRUCTURES 1",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Introduction to algorithms and data structures. Review of elementary programming concepts suitable for the implementation of abstract data types (operators, types and expressions; control of flow; methods; recursion; input & output); Algorithms for searching: linear, bounded linear and binary searches; Algorithms for sorting: selection, insertion, bubble and quick sorts; Fundamental linear data structures: stacks, queues, linked lists; Object-oriented programming: encapsulation and information hiding, classes, interfaces, class hierarchies, inheritance, polymorphism, basic exception handling; Analysis of basic algorithms.Erasmus/Study Abroad studentsPlease note that you should have successfully completed the equivalent of MU modules CS161 and CS162 (Introduction to Computer Science) before taking this module.Also, modules CS210 and CS211 are designed to be taken together. It may not be possible to take this module if you have not also registered for CS210. Please contact the department with any queries.",
+    "learningOutcomes": [
+      "Recognise the importance of program complexity",
+      "Describe a variety of structures for storing data such as arrays, linked lists, stacks and queues",
+      "Explain a range of algorithms involving searching and sorting",
+      "Identify data structuring strategies appropriate to a given context",
+      "Design, develop, test and debug object-oriented programs in Java",
+      "Apply data structuring techniques to the design of computer programs"
+    ],
+    "year": 2
+  },
+  "CS211": {
+    "scrapedModuleCodeFromPage": "CS211",
+    "title": "ALGORITHMS & DATA STRUCTURES 2",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Fundamentals and implementation of Binary Search Trees; Balancing Binary Search Trees; Tree traversals (depth and breadth-first); Graph representations; Hash Tables; Algorithm analysis: upper and average complexity bounds, best, average and worst case algorithm behaviour; Algorithm strategies: brute force, greedy, divide and conquer and backtracking algorithms. Selected advanced topics in Algorithms and Data Structures.Erasmus and Study abroad studentsPlease note that modules CS210 and CS211 are designed to be taken together. It may not be possible to take this module if you have not also registered for CS210. Please contact the department with any queries.",
+    "learningOutcomes": [
+      "Describe a variety of structures for storing data such as binary search trees, balanced binary trees and hash tables",
+      "Outline a range of algorithms in the areas of data compression, cryptography and graph theory",
+      "Explain various object-oriented programming concepts such as encapsulation, inheritance and polymorphism",
+      "Design, develop, test and debug object-oriented programs in Java",
+      "Apply knowledge of algorithm complexity and data structuring techniques to problem solving"
+    ],
+    "year": 2
+  },
+  "MT201S": {
+    "scrapedModuleCodeFromPage": "MT201S",
+    "title": "CALCULUS 3 (S)",
+    "credits": "5",
+    "semester": "1",
+    "department": "MATHEMATICS AND STATISTICS",
+    "overview": "Module Objective: To introduce the student to multivariable differential calculus.Calculus of several variables, especially in two and three dimensions. Functions of two or more variables. Graphs. Limits. Continuity. Partial derivatives. Gradient. Tangents and normals. Max-min. Lagrange multipliers. Introduction to Sequences. Computation using mathematical software.",
+    "learningOutcomes": [
+      "Draw the level curves for a function of two variables.",
+      "Obtain the partial derivatives and gradient vector of a function.",
+      "Obtain tangents and normals to surfaces.",
+      "Solve max-min problems in several variables.",
+      "Discuss the convergence of sequences and series.",
+      "Use the methods from the course to solve problems.",
+      "State definitions and theorems covered in the course."
+    ],
+    "year": 2
+  },
+  "CS220": {
+    "scrapedModuleCodeFromPage": "CS220",
+    "title": "COMPUTER ARCHITECTURE",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Data Representation: Number systems, integer and floating point formats. Functional Logic Design: Boolean algebra, transistor operation fundamentals and implementing boolean logic operations from transistor combinations. Building functional circuits for arithmetic, logic and interfacing operations. Design optimisation and performance issues, boolean theorems, duality, gate sets and alternative implementations, circuit simplification process. Sequential Logic Design: Flip-flop design and operation, synthesis procedure for sequential circuits from word specifications and state diagrams. Circuits for sequenced arithmetic operations and pattern recognition.Memory Technology: Evolution of memory technology, operation of SRAM, DRAM and non-volatile technologies based on floating gate transistors. Implementing reliable memory systems, error detection and correction systems theory and implementation.The lab work involves construction of simulated circuits for computing.",
+    "learningOutcomes": [
+      "Students can expect to obtain a basic understanding of how numeric data is represented in different formats and manipulated in digital circuits and how these circuits interact to perform processing.",
+      "Boolean Algebra is used to express, manipulate and optimise circuit design and students gain an understanding of this process through the construction and simulation of elementary circuits capable of aithmetic function operations, data storage, algorithmic sequencing, counting, selecting and interfinterfacing, culminating in a mini programmable CPU.",
+      "Students will also understand the operation of basic memory technologies and how to deal with error detection and correction in memory systems."
+    ],
+    "year": 2
+  },
+  "CS130": {
+    "scrapedModuleCodeFromPage": "CS130",
+    "title": "DATABASES",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Conceptual data modelling; relational database model; data structures; Structured Query Language (SQL); data integrity; data manipulation; relational algebra; techniques for data analytics and data science; basic transaction processing; database security; alternative database models.",
+    "learningOutcomes": [
+      "Identify major Database Management Systems (DBMS) functions and describe their role in a database system",
+      "Design a relational schema from a conceptual model developed using the entity-relationship model",
+      "Demonstrate the creation of databases from external data sources such as files",
+      "Explain and demonstrate the concepts of entity integrity constraints and referential integrity constraints",
+      "Demonstrate queries in relational algebra",
+      "Use a declarative query language (SQL) to extract information from a database",
+      "Demonstrate use of SQL to work with many different data types (strings, timestamps, numerical, etc) in large databases",
+      "Explain the concepts of database security in the context of web-based database applications."
+    ],
+    "year": 2
+  },
+  "ST221": {
+    "scrapedModuleCodeFromPage": "ST221",
+    "title": "INTRODUCTION TO STATISTICS (S)",
+    "credits": "5",
+    "semester": "1",
+    "department": "MATHEMATICS AND STATISTICS",
+    "overview": "Probability: Sample spaces, events, counting methods, conditional probability, independence, Bayes theorem. Discrete random variables, mean and variance. Binomial and Poisson. Continuous random variables. The Normal model. Bivariate discrete random variables. Covariance and correlation. Sampling distribution of the mean. Confidence intervals and hypothesis testing: one and two samples, paired samples. Confidence intervals and hypothesis testing for one proportion. Computation using statistical software.",
+    "learningOutcomes": [
+      "Describe various types of data using numerical or graphical techniques.",
+      "Calculate probabilities and conditional probabilities and for unions and intersections of events.",
+      "Work with discrete random variables, including Binomial and Poisson.",
+      "Calculate probabilities based on the Normal model.",
+      "Test statistical hypotheses.",
+      "Calculate and interpret confidence intervals.",
+      "Calculate and explain correlation.",
+      "Calculate, interpret and perform inference using the regression line."
+    ],
+    "year": 2
+  },
+  "CS280": {
+    "scrapedModuleCodeFromPage": "CS280",
+    "title": "INTRODUCTION TO USER EXPERIENCE (UX), USER INTERFACE (UI) AND INTERACTION DESIGN",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This course presents an introductory overview of the theory and practice of User Experience (UX), User Interface (UI) and Interaction Design. The module considers design, development and evaluation of interactive sites and apps as highly iterative and connected processes. It takes a user-centred perspective, rather than a system-centred one. Central themes include: (i) understanding human interaction, (ii) the relationships between UX and UI design, (iii) the importance of user involvement and testing of designs, and (iv) iterative development of low and high fidelity interactive prototypes suitable for testing. The course examines bridging the gap between the needs and requirements of human users and the capabilities and limitations of technology.",
+    "learningOutcomes": [
+      "Describe key theories, principles and psychology underpinning User Experience (UX) and User Interaction (UI)",
+      "Describe the differences between User Experience (UX) Design, User Interface (UI) Design and Interaction Design",
+      "Describe how user research methods provide a deep understanding of users, and assist in the creation of user-centred products and services",
+      "Develop UX for an app and website that create positive user experiences",
+      "Develop UI components, implement clickable prototypes and test designs with users",
+      "Develop and implement a User Testing plan for developed prototypes"
+    ],
+    "year": 2
+  },
+  "CS240": {
+    "scrapedModuleCodeFromPage": "CS240",
+    "title": "OPERATING SYSTEMS, COMMUNICATIONS AND CONCURRENCY",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Goals, design and functions of operating systems, representing operating system abstractions. Processor and disk scheduling theory and algorithms, alternative processing environments and architectures, efficient resource management strategies. Memory management, virtual architecture and management algorithm efficiency.Basic file system design, space management options, mapping and interface. Protection and security theory. Design approaches for interprocess communication and practical coding of alternative mechanisms. Concurrency control and the mutual exclusion problem, deadlock, generic concurrency problems and coded strategies and solutions.The lab work is Unix based and involves accessing operating system functions from a command shell and within programs, using various interprocess communication mechanisms and implementing solutions to concurrent programming problems.Erasmus/Study abroad and transfer studentsPlease note that you should have successfully completed a course on Data Structures and Algorithms before taking this module.",
+    "learningOutcomes": [
+      "Through a combination of Lectures and Lab work, the student will understand how computation is modeled, initiated and managed by an operating system, how processes and threads are created and scheduled, how they gain access to system resources, how they communicate with other processes and how to synchronise cooperative sharing activities with specific objectives.",
+      "They will understand the goals of operating systems in different processing environments and architectures and the concepts of how to achieve them. They will be able to critically assess strategies for efficient resource management, as well as understanding how to apply different communication and synchronisation mechanisms appropriately to different situations."
+    ],
+    "year": 2
+  },
+  "CS335": {
+    "scrapedModuleCodeFromPage": "CS335",
+    "title": "SOFTWARE ENGINEERING & SOFTWARE PROCESS",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This module provides both understanding of, and practice in, the principles and techniques of software Engineering. It addresses such issues as: understanding and selecting software processes; planning and monitoring software projects; analysing and designing software using current techniques (including UML); and software testing.",
+    "learningOutcomes": [
+      "Explain the concept of a software life cycle and provide an example, illustrating its phases including the deliverables that are produced.",
+      "Select and justify the software development models and process elements most appropriate for the development and maintenance of a diverse range of software products.",
+      "Compare the traditional waterfall model to the incremental model, the unified model, and other appropriate models.",
+      "Distinguish between the different types and levels of testing (unit, integration, systems, and acceptance) for medium-size software products and related materials.",
+      "Analyse and design software using current techniques, for e.g. UML",
+      "Evaluate the outcomes and the process of a software development project."
+    ],
+    "year": 2
+  },
+  "CS265": {
+    "scrapedModuleCodeFromPage": "CS265",
+    "title": "SOFTWARE TESTING",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Background and reasons for Software Testing. Value and objectives of Software Testing, types of Testing, test methods, testing in the Software Development Process, testability, automation of Software Testing. Topics: Introduction to software testing. Software quality, software faults and failures, phases of testing. Incremental and integration testing, unit testing, whitebox and blackbox testing, system, acceptance, and regression testing. Coverage-based techniques, mutation testing, equivalence testing and boundary value analysis. Cause-effect graphing. Walkthroughs and inspections. Object Oriented software testing.",
+    "learningOutcomes": [
+      "Explain the software testing process from unit testing up to system testing",
+      "Design and apply test cases for both white and black box testing of software",
+      "Describe and evaluate the approaches to integrating software testing into the software development process",
+      "Describe the difference between software verification and software validation"
+    ],
+    "year": 2
+  },
+  "CS355": {
+    "scrapedModuleCodeFromPage": "CS355",
+    "title": "THEORY OF COMPUTATION",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Mathematical preliminaries; regular languages, finite automata, and regular expressions; nondeterminism and determinism in finite automata; finite automata minimisation; properties of regular languages; nonregular languages; context-free languages, context-free grammars, and pushdown automata; nondeterminism and determinism in pushdown automata; properties of context-free languages; non-context-free languages; multi-stack machines; Turing machines and Church Turing thesis; decidable and recognisable languages; undecidability of languages.",
+    "learningOutcomes": [
+      "Design the corresponding machine model to accept a specified language",
+      "Explain how some problems have no algorithmic solution",
+      "Convert among equivalently powerful notations for a language, including among DFAs, NFAs, and regular expressions, and between PDAs and CFGs, explain the Church-Turing thesis and its significance",
+      "Assess and prove the computational power required to decide a language"
+    ],
+    "year": 2
+  },
+  "CS230": {
+    "scrapedModuleCodeFromPage": "CS230",
+    "title": "WEB INFORMATION PROCESSING",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This blended-learning course provides an introduction to client-server information processing followed by an in-depth overview of the components and architecture of HTTP-based web applications. The course also provides a comparative analysis of alternative approaches to web application development using different architectures (LAMP, MEAN), frameworks, programming languages and databases. REST Web services, together with associated development technologies are explained using practical and real-world examples. All the concepts described focus on progressive enhancements (separation of structure, presentation and behaviour) and best practices in interactive, database-driven, web application development. The course also provides an overview of MVC, MVP and MVVM design practices in relation to web development.",
+    "learningOutcomes": [
+      "Describe web technologies, protocols and architectures.",
+      "Describe the difference between LAMP-like and MEAN-like architectures.",
+      "Design and build a dynamic, database-driven, interactive browser-based web-based applications.",
+      "Describe and use various approaches for state data management for web applications.",
+      "Understanding the difference between MVC, MVP and MVVM design practices in relation to web development."
+    ],
+    "year": 2
+  },
+  "CS370": {
+    "scrapedModuleCodeFromPage": "CS370",
+    "title": "COMPUTATION & COMPLEXITY",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Computability theory: Turing machines and Church Turing thesis, decidable and recognisable languages, proofs of undecidability, Turing and many-one reducibility, Rice's theorem, the recursion theorem. Computational complexity: measures of complexity and asymptotic analysis. Complexity classes, P and NP; intra-class reductions; complexity analysis (best, worst, average case) of algorithms. More complexity classes, nondeterminism; NP-hardness, NP-completeness.",
+    "learningOutcomes": [
+      "Explain how some problems have no algorithmic solution.",
+      "Provide examples that illustrate the concept of uncomputability.",
+      "Define the classes P and NP.",
+      "Explain the significance of NP-completeness.",
+      "Prove that a problem is NP-complete by reducing a classic known NP-complete problem to it."
+    ],
+    "year": 3
+  },
+  "CS320": {
+    "scrapedModuleCodeFromPage": "CS320",
+    "title": "COMPUTER NETWORKS",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "The aim of this course is to introduce the principles of computer networking using a top down approach, that is, by beginning at the application layer and working down toward the physical layer. This top-down approach has many advantages pedagogically. Teaching networking applications near the beginning of the course is a powerful motivational tool. In the first few lectures students learn about how networking applications workapplications such as e-mail and the Web, which most students use on a daily basis. Once a student understands the applications, the student can then understand the network services needed to support these applications. The student can then, in turn, examine the various ways in which such services might be provided and implemented in the lower layers. The transport, network, link and physical layers are covered in similar detail; in each case the service models that are required from the layer above is used for motivation to understand the principles and protocols of the latter below. The Internet's architecture and protocols as used as primary vehicles for studying the fundamental computer networking concepts throughout the course from the top down, while concepts and protocols from other network architectures are also included. Much of the course is based on lab practicals using Wireshark, which help to reinforce the various aspects of the course as well as provide a form of continuous assessment.1. Computer Networks & the Internet, packet switching, delay, loss, throughput (3 lectures) 2. Application Layer: Web, eMail, SMTP, DNS, P2P, CDNs, Socket Programming (5 lectures) 3. Transport Layer: Multiplexing, UDP, TCP, Congestion Control (4 lectures) 4. Network Layer: Virtual circuits, IP and Routing Algorithms, Routers, ICMP (5 lectures) 5. Link Layer: Error detection/correction, ALOHA, CSMA, Sliding window protocols, Multiple Access, Addressing, Switching (5 lectures) 6. Internet security/Wireless Networks and Security, Wifi 802.11, mobility management, mobile IP (2 lectures)Erasmus/Study abroad studentsIn order to take this module, you should have previously successfully completed an Introduction to Computer Science course in your home university. Please contact the department with any queries.",
+    "learningOutcomes": [
+      "Understand the functional layering of computer network architectures.",
+      "Explain the concept of packet-switching, and identify and analyze the different types of packet delay in packet-switched networks.",
+      "Understand major internet applications such as the Web and email and the service model that the application layer requires.",
+      "Describe the essential principles of a transport layer protocol (reliable data transfer, flow control, congestion control)",
+      "Write simple socket based applications using Python",
+      "Use IP addressing and apply routing algorithms to find shortest paths for network-layer packet delivery",
+      "Describe and compare data link layer services and multiple access techniques and describe network security issues and some of the methods that address them",
+      "Use networking tools such as Wireshark to observe and analyze behaviors of networking protocols"
+    ],
+    "year": 3
+  },
+  "CS363EP": {
+    "scrapedModuleCodeFromPage": "CS363EP",
+    "title": "EXTENDED INDUSTRIAL WORK PLACEMENT",
+    "credits": "25",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "A minimum six months work placement that extends beyond the summer (into the next academic year)",
+    "learningOutcomes": [
+      "Take direction on applying work placements from the work placement officers, meeting all deadlines set by them and by any potential employers",
+      "Find a suitable work placement by participating in suitable application and interview processes",
+      "Participate in and contribute to a place of work for at least six months (unless curtailed due to circumstances outside the student's control) in a manner that is agreeable to your employer",
+      "Work effectively with others within the social context of a software development team"
+    ],
+    "year": 3
+  },
+  "CS362EP": {
+    "scrapedModuleCodeFromPage": "CS362EP",
+    "title": "EXTENDED INDUSTRIAL WORK PLACEMENT DOCUMENTATION",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "A minimum six months work placement which extends beyond the end of the summer (into the next academic year)",
+    "learningOutcomes": [
+      "Compile a suitable CV and write a suitable application for a work position.",
+      "Evaluate knowledge gained during a work placement.",
+      "Evaluate how the placement reflected the practice of Computer Science and its relationship with the degree programme.",
+      "Document work placement experience in a diary or log.",
+      "Complete and return a work placement report documenting the student's main contributions to the place of work."
+    ],
+    "year": 3
+  },
+  "CS363": {
+    "scrapedModuleCodeFromPage": "CS363",
+    "title": "INDUSTRIAL WORK PLACEMENT",
+    "credits": "25",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "A minimum of six months work placement.",
+    "learningOutcomes": [
+      "Take direction on applying work placements from the work placement officers, meeting all deadlines set by them and by any potential employers",
+      "Find a suitable work placement by participating in suitable application and interview processes",
+      "Participate in and contribute to a place of work for at least six months (unless curtailed due to circumstances outside the student's control) in a manner that is agreeable to your employer",
+      "Work effectively with others within the social context of a software development team"
+    ],
+    "year": 3
+  },
+  "CS310": {
+    "scrapedModuleCodeFromPage": "CS310",
+    "title": "PROGRAMMING LANGUAGES & COMPILERS",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Compilers, interpreters and assemblers; formal grammars; lexical analysis, syntax analysis, predictive parsing; symbol tables and semantic analysis; code generation, optimisation and run-time environments.",
+    "learningOutcomes": [
+      "Describe the phases of program translation from source code to executable code and the files produced by these phases",
+      "Recognise the underlying formal models such as finite state automata, push-down automata and their connection to language definition through regular expressions and grammars",
+      "Explain the benefits of intermediate languages in the compilation process",
+      "Describe the steps and algorithms used in code generation",
+      "Describe how the computer system uses activation records to manage program modules and their data",
+      "Describe approaches to object lifetime management (e.g. garbage collection) and evaluate tradeoffs between different strategies"
+    ],
+    "year": 3
+  },
+  "CS264": {
+    "scrapedModuleCodeFromPage": "CS264",
+    "title": "SOFTWARE DESIGN",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "In this module students will be introduced to principles and practices of object oriented software analysis, design, and programming using modern object oriented programming languages, e.g. C#, Java or C++. The course will be delivered in two parts. The first part will focus on software development; taking students from the basics of the chosen object-oriented language, through to objected oriented and generic programming. The course assumes that students already have an introductory level of programming competency and be familiar with the basics of object oriented programming. The second part will cover the general principles object oriented analysis and design (OOA/D) and in particular the application of design patterns in developing well-structured, extensible, and reusable software systems. This module may be taught using a traditional or blended-learning approach.",
+    "learningOutcomes": [
+      "Analyse, design, and implement software based solutions to problems using the specified object oriented programming language.",
+      "Develop generic implementations of algorithms using the specified object oriented programming language.",
+      "Compare and contrast different software designs based on principled quality criteria.",
+      "Apply OOA/D techniques to the development of software solutions to real-world problems.",
+      "Implement a selection of design patterns in the specified object oriented programming language.",
+      "Understand a selection of design patterns and apply them to their software solutions."
+    ],
+    "year": 3
+  },
+  "CS357": {
+    "scrapedModuleCodeFromPage": "CS357",
+    "title": "SOFTWARE VERIFICATION",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Motivation for software verification and formal methods; overview of syntax and semantics and formal proofs in first-order logic; Design by Contract; Hoare logic and program verification; SMT solvers; temporal logic and model checking; brief case studies using selected formal methods.Erasmus/Study abroad studentsIn order to take this module, you should have previously successfully completed an Introduction to Computer Science course and also a Computer Systems course in your home university. Please contact the department with any queries.",
+    "learningOutcomes": [
+      "Explain the limitations of testing as a means to ensure correctness and evaluate the role of verification in software engineering",
+      "Create mathematically precise specifications and designs using logic-based specification languages",
+      "Prove the correctness of programs with respect to a specification using Hoare logic",
+      "Analyse the properties of formal specifications and designs",
+      "Use tools to verify properties of specifications and designs"
+    ],
+    "year": 3
+  },
+  "CS353": {
+    "scrapedModuleCodeFromPage": "CS353",
+    "title": "TEAM PROJECT",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Software requirement elicitation; consensus estimation; design, testing and implementation as a team; project management techniques and meeting skills; combining new knowledge and knowledge from previous modules to the design, development and deployment of a mobile/web application using SCRUM; using DevOps in a group context.",
+    "learningOutcomes": [
+      "Work effectively as a member of a software development team in an Agile environment",
+      "Deliver technical presentations during the software development cycle",
+      "Apply learned skills and experience more effectively in future project work",
+      "Plan and manage team activities & cCommunicate effectively with other team members",
+      "Use collaborative tools (e.g. software repositories) in a group context",
+      "Be able to design and deploy a product (including SSL certificate installation, configuring/using virtualised servers, serverless hosting, use hosted NOSQL DBs).",
+      "Be able to use modern DevOps approaches."
+    ],
+    "year": 3
+  },
+  "CS362": {
+    "scrapedModuleCodeFromPage": "CS362",
+    "title": "WORK PLACEMENT DOCUMENTATION",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "A minimum of six months work placement.",
+    "learningOutcomes": [
+      "Compile a suitable CV and write a suitable application for a work position.",
+      "Evaluate knowledge gained during a work placement.",
+      "Evaluate how the placement reflected the practice of Computer Science and its relationship with the degree programme.",
+      "Document work placement experience in a diary or log.",
+      "Complete and return a work placement report documenting the student's main contributions to the place of work."
+    ],
+    "year": 3
+  },
+  "CS433": {
+    "scrapedModuleCodeFromPage": "CS433",
+    "title": "ADVANCED COMPUTER ARCHITECTURE",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Architecture of computers in the context of the Internet of Things (Iot): traditional machine cycle and assembly language; interfacing; memory & storage; modern machine cycle; processing architectures; modern computer system architectures; recent advances.",
+    "learningOutcomes": [
+      "Describe the architecture of both traditional and up-to-date microprocessors",
+      "Assemble and disassemble machine code",
+      "Interface with input and output devices",
+      "Describe the modern memory and storage hierarchy, and its impact on performance",
+      "Use different processing architectures (e.g. AVX, GPU, FPGA, AIPU)",
+      "Understand and describe the range of processing architectures encompassed by IoT",
+      "Understand and describe recent advances in processing architecture"
+    ],
+    "year": 4
+  },
+  "CS430": {
+    "scrapedModuleCodeFromPage": "CS430",
+    "title": "ADVANCED CONCEPTS & ISSUES IN COMP.SCI. 1",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "A variety of advanced and current topics in Computer Science will be examined in weekly seminars. These seminars will help students to develop a general and integrative appreciation of Computer Science as a research and professional discipline. Many of the key issues raised during the degree programming will be revisited, compared and contrasted in order to identify common themes and critical differences within the discipline. Students' knowledge of a wide range of issues relevant to Computer Science will be assessed in the end of year paper that will function as the assessment for this module.",
+    "learningOutcomes": [
+      "Describe the background to several advanced research topics in the concepts, technologies or major theorems in the foundations of Computer Science",
+      "Discuss and explain the major issues addressed by each topic and/or the individual sections of the text of each theorem",
+      "Critically evaluate the relevance and use of each research topic or theorem",
+      "Implement algorithms derived from the theory and/or practice of each topic",
+      "Where appropriate, apply algorithms from each topic to practical situations and problems",
+      "Compare and contrast each topic with alternative approaches to the same problems, where they exist"
+    ],
+    "year": 4
+  },
+  "CS404": {
+    "scrapedModuleCodeFromPage": "CS404",
+    "title": "ARTIFICIAL INTELLIGENCE & LANGUAGE PROCESSING",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Introduction to both artificial intelligence (AI) and natural language processing (NLP). Defining intelligence and multiple Intelligences, Turing's imitation game; Ethics. Problem-solving, state-spaces, generate and test, game playing; two-player games, graph-searching; Optimisation strategies; biologically inspired computation. Introduction to neural networks and deep learning, Text processing, parsing natural languages (especially English), semantics and knowledge representation; embeddings and Word2Vec, knowledge graphs, information retrieval, brief overview of reinforcement learning. Large language models (GPT-4), prompt, temperature, hallucinations, and bias.",
+    "learningOutcomes": [
+      "Explain the underlying principles, advantages and limitations of the AI approaches to solving problems",
+      "Demonstrate the application of artificial intelligence techniques to problem solving",
+      "Describe AI algorithms with their application to a range of problem types",
+      "Describe the concepts of modern AI different systems, explaining differences to classical techniques",
+      "Assess the strengths and weaknesses of AI approaches to different problems",
+      "Compare classical and learning (embedding) approaches"
+    ],
+    "year": 4
+  },
+  "CS425": {
+    "scrapedModuleCodeFromPage": "CS425",
+    "title": "AUDIO & SPEECH PROCESSING",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Time domain speech processing; frequency domain speech analysis; time frequency representations; implementations of digital audio effects. Algorithms for the analysis, synthesis, and modification of instrumental sounds.",
+    "learningOutcomes": [
+      "Illustrate the mathematical theory underlying each signal processing approach for speech and audio",
+      "Design, implement and critically evaluate signals processing algorithms for speech and audio",
+      "Integrate individual algorithmic elements to create an audio processing system to extract particular features from speech or audio",
+      "Describe key digital filter structures used for the processing of audio signals"
+    ],
+    "year": 4
+  },
+  "CS427": {
+    "scrapedModuleCodeFromPage": "CS427",
+    "title": "AUTONOMOUS MOBILE ROBOTICS",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "In this course students will be introduced to the field of autonomous mobile robotics. The course syllabus will be drawn from the following topics: Wheeled Locomotion and Kinematics, Sensors and Perception, Localisation and Mapping, and Planning and Navigation.",
+    "learningOutcomes": [
+      "Model and analyse the mobile kinematics of a variety of wheel robotics platforms.",
+      "Explain the role and importance of probabilistic methods in mobile robotics.",
+      "Understand the sensing and perception systems and algorithms of a mobile robot.",
+      "Describe how state estimation techniques can be used to estimate the state of a robotic system from sensor data.",
+      "Formulate the tasks of robot localisation and SLAM within the recursive state estimation paradigm.",
+      "Understand and explain how the above methods and techniques can be combined into an overall framework for mobile robot planning and navigation."
+    ],
+    "year": 4
+  },
+  "CS426": {
+    "scrapedModuleCodeFromPage": "CS426",
+    "title": "COMPUTER GRAPHICS",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Topics may include: Theory: Primitives, 2D&3D, Image Formats, Colour, Lighting and Shading, Homogeneous co-ordinates, Quaternions, Camera models, Transformations, Rendering, Animation; Hardware: Graphics Cards, Data formats, display technologies, MoCap; Software: OpenGL, Blender and Unity.",
+    "learningOutcomes": [
+      "Discuss the history of computer graphics; explain application areas of graphics and current areas of research",
+      "Distinguish between ray tracing and rasterisation methods of image formation",
+      "Implement code to describe an object and scene using ray-tracing methods",
+      "Implement code to render 2D graphics",
+      "Implement code to render and manipulate 3D models within a skybox",
+      "Explain and implement colour and lighting models",
+      "Explain how to model motion",
+      "Explain fractals"
+    ],
+    "year": 4
+  },
+  "CS410": {
+    "scrapedModuleCodeFromPage": "CS410",
+    "title": "COMPUTER VISION",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "In this course students will be given a broad introduction to the field of computer vision, including the following topics: Introduction to computer vision and its applications; cameras and sensing; visual attributes, histograms and kernel density estimation; contour extraction; interest point detection and matching; machine learning and deep neural networks for computer vision.",
+    "learningOutcomes": [
+      "Explain the underlying principles, advantages and limitations of the AI approaches to solving problems.",
+      "Demonstrate the application of artificial intelligence techniques to problem solving.",
+      "Describe AI algorithms with their application to a range of problem types.",
+      "Describe the concepts of modern AI different systems, explaining differences to classical techniques.",
+      "Assess the strengths and weaknesses of AI approaches to different problems.",
+      "Compare classical and learning (embedding) approaches to processing text.",
+      "Assess the impacts of representational alternatives for problems and linguistic information."
+    ],
+    "year": 4
+  },
+  "CS416": {
+    "scrapedModuleCodeFromPage": "CS416",
+    "title": "CRYPTOGRAPHY",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Classical ciphers; symmetric ciphers; hash functions; authentication; asymmetric ciphers; factorization; DLP and attacking asymmetric ciphers; security protocols; emerging concepts; selected topics from biometrics; elliptic curve cryptography; smart card security; identity based encryption; computer forensics. Practical work: Competitive cryptanalysis",
+    "learningOutcomes": [
+      "Throughout the course students will obtain the ability to analyse the main areas of cryptology with an emphasis on implementation and cryptanalysis of concepts."
+    ],
+    "year": 4
+  },
+  "CS423": {
+    "scrapedModuleCodeFromPage": "CS423",
+    "title": "DESIGNING FOR VIRTUAL ENVIRONMENTS",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This module teaches students skills to design virtual (XR) worlds. It covers the meaning and history of XR, XR technology (e.g., head-mounted displays and haptics) and teaches concepts in content creation and interaction design (for XR and 3D interfaces). Students will learn how to author content (e.g. with Blender) and design larger interactive spaces with gaming engines (e.g., with Godot or Unreal) by developing an immersive XR application, game, or experience. Learning will be guided by the practical project work in the labs and the theory and examples in the lectures.",
+    "learningOutcomes": [
+      "Compare and discuss XR technology in its historical context;",
+      "Relate user experience (UX) and usability guidelines to practical XR requirements;",
+      "Discuss and apply methods and theories underpinning XR;",
+      "Apply current tools/APIs/gaming engines for XR;",
+      "Design and implement an interactive and immersive XR application, game, or experience."
+    ],
+    "year": 4
+  },
+  "CS440": {
+    "scrapedModuleCodeFromPage": "CS440",
+    "title": "FINAL YEAR PROJECT CSSE",
+    "credits": "15",
+    "semester": "Year-Long",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Depends entirely on the individual project, which may be proposed by either the student or a member of staff.",
+    "learningOutcomes": [
+      "Conduct a reasonably thorough investigation into a topic of interest, importance or relevance to computer science or its applications",
+      "Where appropriate, accomplish an acceptable implementation (or other useful model) to fulfil the main goals of the project",
+      "Work largely independently, within agreed project requirements, with minimal supervision",
+      "Deliver technical presentations during the project development cycle",
+      "Complete a detailed project report covering all central aspects of the project",
+      "Work within all project deadlines, interim report deadlines and consultation requirements giving regular and timely feedback to your project supervisor(s)",
+      "Plan and manage all your own project milestones"
+    ],
+    "year": 4
+  },
+  "CS356": {
+    "scrapedModuleCodeFromPage": "CS356",
+    "title": "IMAGE AND OPTICAL PROCESSING",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Introduction to image processing; physical considerations (transfer functions, dynamic range, sampling, noise); two-dimensional transforms (e.g. the Fourier transform) and their properties; convolution; object recognition; deep learning convolutional neural networks for object recognition and segmentation; optical image processing; optical computing; three-dimensional image processing using digital holograms.",
+    "learningOutcomes": [
+      "Discuss applications of image processing in academia and industry",
+      "Explain the limits of image processing on poor quality data",
+      "Verify Fourier transform theorems using a high-level programming language",
+      "Design and implement a convolution filter for a given task",
+      "Design, implement, and train a convolutional neural network for an image processing task",
+      "Simulate optical image processing and optical computing architectures",
+      "Analyse the three-dimensional display limits of an arbitrary three-dimensional display",
+      "Implement various image processing tasks on three-dimensional objects encoded in digital holograms"
+    ],
+    "year": 4
+  },
+  "CS401": {
+    "scrapedModuleCodeFromPage": "CS401",
+    "title": "MACHINE LEARNING & NEURAL NETWORKS",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Machine learning principles; The probabilistic perspective on machine learning; Supervised, unsupervised, and reinforcement learning; Biological neurons and their relation to linear classifiers; Supervised learning techniques: linear regression, the perceptron learning rule, backpropagation, recurrent networks, deep learning, support vector machines; Unsupervised techniques: k-means clustering, EM of gaussian mixtures, hidden markov models; Reinforcement learning: Policy-value iteration, Q-learning, TD-learning, deep reinforcement learning systems.",
+    "learningOutcomes": [
+      "Distinguish the different categories of Machine Learning techniques and identify situations in which they might be used;",
+      "Describe the implementation of simple algorithms for machine learning;",
+      "Discuss the adaptation of a standard technique to a given specific problem;",
+      "Describe the implementation and evaluation some standard machine learning algorithms in a general purpose programming language such as Java;",
+      "Obtain a basic understanding of machine learning approaches and neural networks;",
+      "Discuss the relationships between training set, test set, generalisation, cross validation;",
+      "Describe how various machine learning techniques work and what their strengths and limitations are;",
+      "Select and use appropriate machine learning techniques to solve real problems."
+    ],
+    "year": 4
+  },
+  "CS322": {
+    "scrapedModuleCodeFromPage": "CS322",
+    "title": "MUSIC PROGRAMMING 2",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This module will study several different aspects of music systems programming. These will include audio programming, signal processing and component development (plugins, opcodes, classes, etc.).",
+    "learningOutcomes": [
+      "Describe the principles underlying sound generating and processing sections of software synthesizers.",
+      "Identify the causes and solutions for aliasing distortion.",
+      "Implement synthesizer elements in software",
+      "Implement sound effect processing in software.",
+      "Construct a software that can interpret and respond to midi protocol messages.",
+      "Discuss the issues of real-time implementations."
+    ],
+    "year": 4
+  },
+  "CS417": {
+    "scrapedModuleCodeFromPage": "CS417",
+    "title": "NUMERICAL COMPUTATION",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Topics from: Error explosion; floating point arithmetic; systems of linear and non-linear equations interpolation; numerical differentiation; ordinary differential equations; boundary value problems; Partial differential equations; non-linear equations; non-standard computations. Emphasis: On applications not theory; on adapting mathematical algorithms; on error control; on programming solutions, Python, Matlab, Java, Perl.",
+    "learningOutcomes": [
+      "The purpose of this course is to introduce students to the basic techniques of Numerical Computation used to solve real world problems from a variety of disciplines. Good software engineering practice tells us not to reinvent the wheel if we can avoid it so the course will concentrate on utilizing powerful numerical software packages. The emphasis will be on the role of the computer scientist in the implementation of these techniques. Students will be introduced to a variety of numerical algorithms and study their strengths and weaknesses, highlighted by interesting and relevant examples. The course will not include rigorous theoretical analysis but powerful mathematical techniques will be discussed and implemented."
+    ],
+    "year": 4
+  },
+  "CS402": {
+    "scrapedModuleCodeFromPage": "CS402",
+    "title": "PARALLEL & DISTRIBUTED SYSTEMS",
+    "credits": "5",
+    "semester": "2",
+    "department": "COMPUTER SCIENCE",
+    "overview": "Introduction to Distributed Systems and Common Applications in E-Commerce, Big Data, Modelling and Analytics, Ubiquitous Computing, Pervasive Systems, Massive Multiplayer Games, High Performance and High Availability Applications, Cloud Computing, Content Delivery Networks and Edge Computing.Architectural Paradigms: Client/Server, SOA, Peer to Peer, Broker Architecture, Event Driven and Shared Memory models.One primary theme explores the evolution of Internet based systems for Client/Server communication and data exchange formats from the TCP/IP protocol, socket interface, early RPC, ORB, RMI, text based HTTP dependent web services using XML technologies, REST style with JSON, high performance synchronous, asynchronous and streaming binary RPC using HTTP/2, gRPC and protocol buffers, multicast group communication, reliability and ordering algorithms and analysis of resource and latency costs.The other primary theme explores systems for expressing and managing application concurrency, multithreading theory, thread management and synchronisation for Posix threads, Java threads, concept of threadpools and executors. The OpenMP API for expressing parallelism on multiprocessor shared memory architectures. MPI for large scale parallel distributed computing demonstrating the power of high performance collective communication primitives for moving data between processing elements when implementing Map/Reduce style programming patterns. All of these systems are chosen as they can be installed and explored on a standalone desktop environment.Finally, a general introduction to transaction systems and reliability of Client/Server interactions is presented explaining how to implement atomicity, isolation and durability properties of transactions in concurrent systems and understanding latency and resource costs of these implementations.Students will carry out coursework from a selection of programming assignments given out on specific topics.",
+    "learningOutcomes": [
+      "Gain an understanding of the benefits & complexities surrounding parallel and distributed systems design in an Internet context. They will have an overview of the principle architectural approaches to design and be able to assess, and appreciate through historical experience, the characteristics of accessibility & useability of a system or application in the context of its understandability & simplicity of its technologies, its use of open protocols and platform and language neutrality features.",
+      "Assess the likely performance and scalability of a design, identify bottlenecks and points of failure and be capable of suggesting design or technological improvements to communication and/or processing structure, by applying an indepth understanding of the evolution of communication protocols, coupled with the design and motivations for current technological capabilities in conjunction with knowledge of client side and server side concurrency mechanisms and techniques.",
+      "Gain a basic understanding of how to use well known APIs for expressing parallel algorithms to run on multiprocessor shared memory or networked architectures."
+    ],
+    "year": 4
+  },
+  "CS424": {
+    "scrapedModuleCodeFromPage": "CS424",
+    "title": "PROGRAMMING LANGUAGE DESIGN & SEMANTICS",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This module is about the design of programming languages. In particular it is concerned with the syntax, the semantics and usability of a programming language. The basics of lambda calculus, both untypes and simply typed, will be studied, with an eye towards its use in formalizing the semantics of programming languages. Working knowledge of three languages Scheme, Haskell, and Prolog) will be acquired. Semantics will be studied using both formal machinery and an interpreter-based approach.",
+    "learningOutcomes": [
+      "Read and write simple programs in Scheme, Haskell, and Prolog;",
+      "Understand lambda calculus reductions, renaming, variable capture, and confluence;",
+      "Understand the erasure theorem, the termination properties of both typed and untyped lambda calculus, and typing rules;",
+      "Describe the syntax and semantics of Scheme, Haskell, Prolog, and lambda calculus."
+    ],
+    "year": 4
+  },
+  "MP472": {
+    "scrapedModuleCodeFromPage": "MP472",
+    "title": "QUANTUM INFORMATION PROCESSING",
+    "credits": "5",
+    "semester": "2",
+    "department": "PHYSICS",
+    "overview": "Introduction to classical and quantum information, quantum communication and cryptography, quantum teleportation, physical and conceptual models of computation and computational complexity classes, quantum algorithms, theory of open quantum systems, quantum error correction, fault-tolerant quantum computing, topological quantum computing, physical realization of quantum information processing.",
+    "learningOutcomes": [
+      "Define quantum bits, their composition and elementary quantum operations including measurement",
+      "Use Schmidt decomposition to characterize entangled and separable two-qubit states and their application in teleportation and dense coding",
+      "Demonstrate exponential speedup of quantum computing with the example of the Deutsch-Jozsa quantum computing algorithm",
+      "Compare computational complexity classes of classical, probabilistic, quantum and non-deterministic computing models",
+      "Explain the concept of open quantum systems, their states using density matrix formalism and their operations using operator sum representation",
+      "Present basic single-qubit error processes in the Bloch representation",
+      "Describe quantum error correction on the example of the Shor nine qubit code in the standard and stabilizer formulations",
+      "Explain fault-tolerance criteria and topological quantum computation"
+    ],
+    "year": 4
+  },
+  "CS422": {
+    "scrapedModuleCodeFromPage": "CS422",
+    "title": "ROBOTICS & AUTOMATION",
+    "credits": "5",
+    "semester": "1",
+    "department": "COMPUTER SCIENCE",
+    "overview": "This module provides an introduction to Robotics. The main focus is on building basic mathematical methods for describing and controlling the motion of robotic systems.Integrated product design; Sensors; Use of software observers. Vision Systems: Image processing techniques; Perspective Transformations; Robotics; Basic Configurations; Statistical methods, Robot Navigation and Locomotions; Statistical robotics used for mapping and location estimation.",
+    "learningOutcomes": [
+      "Discuss real robots and robots in popular culture and society. Discuss the ethical issues this presents.",
+      "Describe the anatomy and features of a typical robot and evaluate mobility of a simple machine using number synthesis, joints and pairs.",
+      "Describe the motion of articulated robots.",
+      "Identify suitable actuators and controllers for a specific task.",
+      "Understand control strategies.",
+      "Describe the approaches and techniques to describe mobile robot motion, localisation, mapping and path planning.",
+      "Have an appreciation of the software used to control and model robotic systems."
+    ],
+    "year": 4
+  }
+}

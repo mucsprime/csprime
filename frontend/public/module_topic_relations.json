@@ -1,0 +1,70 @@
+{
+  "CS161": {
+    "Recursion": ["CS210", "CS211", "CS310", "CS230"],
+    "Nested loops & 2d arrays": ["CS210", "CS211", "CS264"],
+    "Scope, casting, and exceptions": ["CS210", "CS211", "CS264"],
+    "Java": ["CS210", "CS211"]
+  },
+  "CS171": {
+    "Probability and Statistics": ["ST221"],
+    "Linear Algebra": ["CS426"],
+    "Machine Learning": ["CS401"],
+    "Artificial Intelligence (AI)": ["CS404", "CS401", "CS422"],
+    "Computer Graphics": ["CS426", "CS423"],
+    "Computer Vision": ["CS410"],
+    "Cryptography": ["CS416"],
+    "Robotics": ["CS422"],
+    "Signal Processing": ["CS410", "CS356", "CS417", "CS425", "CS426"],
+    "Graph Theory": ["CS211", "CS404"],
+    "Computational Problem Solving": ["CS404"]
+  },
+  "CS162": {
+    "Regular Expressions": ["CS310", "CS130", "CS355"],
+    "Methods": ["CS210", "CS264"],
+    "Finite State Machines": ["CS355", "CS370"],
+    "Object-Oriented Programming (OOP)": ["CS230", "CS264"],
+    "Recursion": ["CS210", "CS211", "CS310", "CS230", "CS370"],
+    "Turing machines": ["CS355", "CS370"],
+    "OOP": ["CS230", "CS264"],
+    "Java": ["CS210", "CS211"],
+    "Context-Free Grammars": ["CS355", "CS310"],
+    "Sorting and Searching": ["CS210"],
+    "Classes and Objects": ["CS210", "CS264"],
+    "Inheritance": ["CS210", "CS264"]
+  },
+  "CS172": {
+    "Prolog": ["CS310"],
+    "First Order Logic": ["CS310"],
+    "Set Theory": ["CS370"],
+    "Relations": ["CS130"],
+    "Functions": ["CS130", "CS416"]
+  },
+  "MT101SC": {
+    "Maths": ["MT201S"],
+    "Calculus": ["MT201S", "CS424"],
+    "Time Complexity": ["CS210", "CS21"],
+    "Optimization": ["CS310"],
+    "Gradient Descent": ["CS401"]
+  },
+  "MT102SC": {
+    "Maths": ["MT201S"],
+    "Calculus": ["MT201S", "CS424"],
+    "Complexity Classes": ["CS370"],
+    "Probability Theory": ["CS401"],
+    "Evaluation Metrics": ["CS401"]
+  },
+  "MT113SC": {
+    "Linear algebra": ["CS426"],
+    "Robotics": ["CS422", "CS427"],
+    "Maths": ["MT201S"],
+    "Machine Learning & Neural Networks": ["CS401"],
+    "Computer Graphics": ["CS426", "CS423"],
+    "3D Modeling": ["CS426"],
+    "Dot products": ["CS426"],
+    "Matrices": ["CS426", "CS422"],
+    "Angles and projections": ["CS426"],
+    "Eigenvalues and Eigenvectors": ["CS422"],
+    "Transformations": ["CS422"],
+    "Vectors": ["CS422"]
+  }
+}

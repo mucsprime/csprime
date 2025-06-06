@@ -31,6 +31,14 @@ export default async function Page({
           <h3 className="text-xl mb-2">Overview</h3>
           {module.overview}
         </div>
+        <div className="p-8 mt-8 max-w-[1000px] w-full rounded-lg border-1 border-gray-200">
+          <h3 className="text-xl mb-2">Learning Outcomes</h3>
+          <ul>
+            {module.learningOutcomes.map((outcome: string, i: number) => (
+              <li key={i}>{outcome}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }

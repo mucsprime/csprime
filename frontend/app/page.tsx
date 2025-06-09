@@ -4,8 +4,8 @@ import module_json from "@/public/module_info.json";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col  p-4 pb-20 items-center max-w-[1200px]">
-        <h1 className="text-[60px] font-bold mt-8 text-center">
+      <div className="flex flex-col md:mt-6 p-4 pb-20 items-center max-w-[1200px]">
+        <h1 className="sm:text-[60px] text-[40px] font-bold sm:mt-8 text-center">
           Your Educational Compass
         </h1>
         <h3 className="text-2xl text-gray-700 p-8 pt-4 pb-8 text-center">
@@ -26,7 +26,7 @@ export default function Home() {
           <h3 className="text-4xl font-semibold mt-8 mb-8 text-center">
             Explore Modules
           </h3>
-          <div className="flex w-full justify-between flex-wrap">
+          <div className="flex w-full justify-around flex-wrap">
             {Object.entries(module_json)
               .slice(0, 15)
               .map((module, i) => (

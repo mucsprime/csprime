@@ -29,8 +29,9 @@ export default function Home() {
           <div className="flex w-full justify-around flex-wrap">
             {Object.entries(module_json)
               .slice(0, 15)
-              .map((module, i) => (
-                <ModuleBlock code={module[0]} title={module[1].title} />
+              .map(([code, data]) => (
+                <ModuleBlock key={code} code={code} title={data.title} />
+                  //fff
               ))}
           </div>
         </div>

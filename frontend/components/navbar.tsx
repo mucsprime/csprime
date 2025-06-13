@@ -29,6 +29,9 @@ function Navbar() {
           <Link href="/analytics">
             <li className="hover:cursor-pointer">Analytics</li>
           </Link>
+          <Link href="/chat">
+            <li className="hover:cursor-pointer">Chat</li>
+          </Link>
         </ul>
       </div>
       <div>
@@ -61,6 +64,9 @@ function Navbar() {
           </Link>
           <Link href="/analytics" onClick={() => setIsOpen(false)}>
             <li className="hover:cursor-pointer">Analytics</li>
+          </Link>
+          <Link href="/analytics" onClick={() => setIsOpen(false)}>
+            <li className="hover:cursor-pointer">Chat</li>
           </Link>
           <li className="border-gray-400 border-1 py-2 px-4 rounded-lg">
             Login

@@ -6,7 +6,6 @@ import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import {
-  ClerkProvider,
   SignInButton,
   SignUpButton,
   SignedIn,

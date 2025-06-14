@@ -5,6 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,10 +44,17 @@ function Navbar() {
       </div>
       <div>
         <ul className="flex justify-around hidden md:flex gap-4 w-[200px]">
-          <li className="border-gray-400 border-1 py-2 px-4 text-center rounded-lg">
-            Login
-          </li>
-          <li className="bg-black text-white py-2 px-4 rounded-lg">Sign Up</li>
+          <SignedOut>
+            <li className="border-gray-400 border-1 py-2 px-4 text-center rounded-lg">
+              <SignInButton />
+            </li>
+            <li className="bg-black text-white py-2 px-4 rounded-lg">
+              <SignUpButton />
+            </li>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </ul>
       </div>
       <div className="text-3xl flex md:hidden">

@@ -1,31 +1,131 @@
-import React from "react";
-import chat_data from "../../public/chat_data.json";
+"use client";
+import React, { useState, useRef, useEffect } from "react";
 
-function Page() {
+type Message = {
+  role: "system" | "user" | "assistant";
+  content: string;
+};
+
+export default function Page() {
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      role: "system",
+      content: "I'm your Maynooth CS Assistant. Ask me anything about Computer Science modules!"
+    },
+  ]);
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages, loading]);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const sendMessage = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!input.trim() || loading) return;
+
+    // Add user message
+    const userMessage: Message = { role: "user", content: input };
+    setMessages((prev) => [...prev, userMessage]);
+    setInput("");
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:8000/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: input }),
+      });
+
+      if (!response.ok) throw new Error(response.statusText);
+
+      const data = await response.json();
+      const aiMessage: Message = {
+        role: "assistant",
+        content: data.answer || "I couldn't find an answer to that question.",
+      };
+
+      setMessages((prev) => [...prev, aiMessage]);
+    } catch (err) {
+      console.error("API Error:", err);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: "Sorry, I'm having trouble connecting. Please try again later.",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="flex flex-col items-center h-full w-full min-h-0">
-      <div className="flex flex-col justify-end p-4 max-w-[900px] h-full w-full min-h-0">
-        <div className="flex flex-col flex-auto min-h-0 overflow-y-scroll">
-          {chat_data["messages"].map((message, i) => (
-            <div
-              key={i}
-              className={`max-w-1/2 p-4 rounded-lg mb-4 ${
-                message.role == "user" ? "ml-auto bg-blue-200" : "bg-green-200"
-              }`}
+      <div className="flex flex-col items-center h-screen w-full bg-gray-50">
+        <header className="w-full bg-blue-600 text-white p-4 text-center shadow-md">
+          <h1 className="text-xl font-bold">Maynooth CS Module Assistant</h1>
+        </header>
+
+        <div className="flex flex-col p-4 max-w-4xl w-full h-full">
+          {/* Messages container */}
+          <div className="flex-1 overflow-y-auto mb-4 bg-white rounded-lg shadow-inner p-4">
+            {messages.filter(m => m.role !== "system").map((message, i) => (
+                <div
+                    key={i}
+                    className={`flex mb-4 ${message.role === "user" ? "justify-end" : "justify-start"}`}
+                >
+                  <div
+                      className={`max-w-[80%] p-3 rounded-lg ${
+                          message.role === "user"
+                              ? "bg-blue-100 rounded-br-none"
+                              : "bg-green-100 rounded-bl-none"
+                      }`}
+                  >
+                    {message.content}
+                  </div>
+                </div>
+            ))}
+
+            {loading && (
+                <div className="flex justify-start mb-4">
+                  <div className="bg-yellow-100 p-3 rounded-lg rounded-bl-none animate-pulse">
+                    Thinking about your question...
+                  </div>
+                </div>
+            )}
+            <div ref={messagesEndRef} />
+          </div>
+
+          {/* Input form */}
+          <form onSubmit={sendMessage} className="flex gap-2">
+            <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Ask about CS modules like CS201, CS211..."
+                disabled={loading}
+            />
+            <button
+                type="submit"
+                disabled={loading}
+                className={`bg-blue-600 text-white px-6 py-3 rounded-lg transition ${
+                    loading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
+                }`}
             >
-              {message.content}
-            </div>
-          ))}
+              {loading ? "Sending..." : "Ask"}
+            </button>
+          </form>
+
+          <div className="mt-2 text-center text-sm text-gray-500">
+            Ask about modules, professors, or course content at Maynooth University
+          </div>
         </div>
-        <form>
-          <input
-            type="text"
-            className="p-4 bg-gray-100 outline-none border-gray-200 rounded-lg border-1 w-full"
-          />
-        </form>
       </div>
-    </div>
   );
 }
-
-export default Page;

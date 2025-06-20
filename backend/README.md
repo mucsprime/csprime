@@ -1,10 +1,10 @@
-##Create a new venv
+## Create a new venv
 
 ```
 python -m venv venv
 ```
 
-##Activate the venv
+## Activate the venv
 
 bash:
 
@@ -18,7 +18,7 @@ windows cmd:
 venv\Scripts\activate
 ```
 
-##Install requirements
+## Install requirements
 
 ```
 pip install -r requirements.txt

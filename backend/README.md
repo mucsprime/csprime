@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 ## Create a new venv
 
 ```

@@ -1,12 +1,17 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-import requests
-from fastapi.middleware.cors import CORSMiddleware
+# from idlelib import history
 
-# Initialize FastAPI app first
+from fastapi import FastAPI, HTTPException, Request
+from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+import requests
+import json
+from pathlib import Path
+from uuid import uuid4
+
+# Initialize FastAPI app
 app = FastAPI()
 
-# Add CORS middleware to the app instance
+# Allow CORS for all origins (for frontend access)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -15,17 +20,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Session memory store
+chat_sessions = {}
+
+# API keys
+GEMINI_API_KEY = "AIzaSyDwuiwLDZJIaOiy_IMm1Z8V5Z1TOb8wtKg"
+SEARCH_API_KEY = "AIzaSyD248q49_zEVTrXTgqanODm_isDXLgEu8Y"
+SEARCH_ENGINE_ID = "35b9b6ed8f04a4481"
+
 class Question(BaseModel):
     query: str
 
-
-GEMINI_API_KEY = ""
-SEARCH_API_KEY = ""
-SEARCH_ENGINE_ID = ""
-
 @app.post("/ask")
-async def ask_question(q: Question):
-    # Step 1: Search Google using Programmable Search Engine
+async def ask_question(q: Question, request: Request):  # ✅ Use FastAPI's Request here
+    # Step 1: Search Google
     search_url = "https://www.googleapis.com/customsearch/v1"
     params = {
         "key": SEARCH_API_KEY,
@@ -36,39 +44,59 @@ async def ask_question(q: Question):
 
     try:
         search_res = requests.get(search_url, params=params)
-        search_res.raise_for_status()  # Raise exception for HTTP errors
+        search_res.raise_for_status()
         search_data = search_res.json()
     except requests.RequestException as e:
         raise HTTPException(status_code=500, detail=f"Search API error: {str(e)}")
 
-    # Handle no results or missing items
     if not search_data.get("items"):
-        raise HTTPException(
-            status_code=404,
-            detail="No relevant search results found. Try a different query."
-        )
+        raise HTTPException(status_code=404, detail="No relevant search results found.")
 
-    # Combine top 3 results for better context
     snippets = [item.get("snippet", "") for item in search_data["items"][:3]]
     context = "\n\n".join(snippets)
 
-    # Step 2: Generate prompt for Gemini
+    # Step 2: Load JSON knowledge
+    json_path = Path("module_info.json")
+    with json_path.open() as f:
+        maynooth_data = json.load(f)
+    json_snippet = json.dumps(maynooth_data, indent=2)
+
+    # Step 3: Manage chat memory
+    session_id = request.headers.get("X-Session-ID") or str(uuid4())
+    if session_id not in chat_sessions:
+        chat_sessions[session_id] = []
+    history = chat_sessions[session_id]
+    history.append({"role": "user", "text": q.query})
+
+    # Step 4: Construct the prompt
     prompt = (
         f"User asked: {q.query}\n\n"
         f"Here are some relevant search results:\n{context}\n\n"
-        "Please provide a clear, concise explanation in simple terms:"
+        f"Here is structured data from Maynooth University:\n{json_snippet}\n\n"
+        "Now, using the information above and your own reasoning ability, "
+        "give a helpful, clear answer as if you're explaining to a 15-year-old.\n"
+        "If something is not directly stated, try to infer it from the context.\n"
+        "You are a friendly, smart AI assistant that likes to help students.\n"
+        "Here's the chat so far:\n\n"
     )
 
-    # Step 3: Call Gemini API
-    gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
+
+    for msg in history:
+        who = "User" if msg["role"] == "user" else "Assistant"
+        prompt += f"{who}: {msg['text']}\n"
+
+    prompt += "\nAssistant:"  # ✅ Correctly placed outside loop
+
+    # Step 5: Call Gemini
+    gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [{
             "parts": [{"text": prompt}]
         }],
         "generationConfig": {
-            "temperature": 0.7,
-            "topK": 40,
+            "temperature": 0.9,
+            "topK": 50,
             "topP": 0.95
         }
     }
@@ -79,9 +107,7 @@ async def ask_question(q: Question):
         gemini_data = gemini_res.json()
         reply = gemini_data["candidates"][0]["content"]["parts"][0]["text"]
     except (KeyError, IndexError, requests.RequestException) as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Failed to generate response: {str(e)}"
-        )
+        raise HTTPException(status_code=500, detail=f"Failed to generate response: {str(e)}")
 
-    return {"answer": reply}
+    history.append({"role": "assistant", "text": reply})
+    return {"answer": reply, "session_id": session_id}

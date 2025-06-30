@@ -1,5 +1,5 @@
 import ModuleBlock from "@/components/ModuleBlock";
-import module_json from "../../backend/module_info.json";
+import module_json from "../module_info.json";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
               .slice(0, 15)
               .map(([code, data]) => (
                 <ModuleBlock key={code} code={code} title={data.title} />
-                  //fff
+                //fff
               ))}
           </div>
         </div>

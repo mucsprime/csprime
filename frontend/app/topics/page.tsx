@@ -1,5 +1,5 @@
 import React from "react";
-import module_topic_relations from "../../../backend/module_topic_relations.json";
+import module_topic_relations from "../../module_topic_relations.json";
 import { getTopics, topicsToModules } from "../../utils/topicFunctions";
 
 function Page() {

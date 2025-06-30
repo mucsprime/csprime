@@ -24,9 +24,9 @@ app.add_middleware(
 chat_sessions = {}
 
 # API keys
-GEMINI_API_KEY = "AIzaSyDwuiwLDZJIaOiy_IMm1Z8V5Z1TOb8wtKg"
-SEARCH_API_KEY = "AIzaSyD248q49_zEVTrXTgqanODm_isDXLgEu8Y"
-SEARCH_ENGINE_ID = "35b9b6ed8f04a4481"
+GEMINI_API_KEY = ""
+SEARCH_API_KEY = ""
+SEARCH_ENGINE_ID = ""
 
 class Question(BaseModel):
     query: str

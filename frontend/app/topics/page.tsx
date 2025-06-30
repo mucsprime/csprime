@@ -1,5 +1,5 @@
 import React from "react";
-import module_topic_relations from "../../public/module_topic_relations.json";
+import module_topic_relations from "../../../backend/module_topic_relations.json";
 
 interface TopicRelation {
   [courseCode: string]: {

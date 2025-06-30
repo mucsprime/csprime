@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import module_info from "@/public/module_info.json";
-import module_topic_relations from "@/public/module_topic_relations.json";
+import module_info from "../../../../backend/module_info.json";
+import module_topic_relations from "../../../../backend/module_topic_relations.json";
 
 type ModuleTopicKey = keyof typeof module_topic_relations;
 

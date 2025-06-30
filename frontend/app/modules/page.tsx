@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import ModuleBlock from "@/components/ModuleBlock";
-import module_json from "@/public/module_info.json";
+import module_json from "../../../backend/module_info.json";
 
 const module_entries = Object.entries(module_json);
 

@@ -42,7 +42,11 @@ export default function Page() {
         body: JSON.stringify({ query: input }),
       });
 
-      if (!response.ok) throw new Error(response.statusText);
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.detail || response.statusText);
+      }
+
 
       const data = await response.json();
       const aiMessage: Message = {
@@ -51,16 +55,17 @@ export default function Page() {
       };
 
       setMessages((prev) => [...prev, aiMessage]);
-    } catch (err) {
+    } catch (err: any) {
       console.error("API Error:", err);
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I'm having trouble connecting. Please try again later.",
+          content: `Sorry, something went wrong: ${err.message}`,
         },
       ]);
-    } finally {
+    }
+    finally {
       setLoading(false);
     }
   };

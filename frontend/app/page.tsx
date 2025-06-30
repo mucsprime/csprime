@@ -1,5 +1,5 @@
 import ModuleBlock from "@/components/ModuleBlock";
-import module_json from "@/public/module_info.json";
+import module_json from "../../backend/module_info.json";
 
 export default function Home() {
   return (

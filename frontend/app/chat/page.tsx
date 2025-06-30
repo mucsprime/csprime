@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 type Message = {
   role: "system" | "user" | "assistant";
@@ -10,7 +12,8 @@ export default function Page() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "system",
-      content: "I'm your Maynooth CS Assistant. Ask me anything about Computer Science modules!"
+      content:
+        "I'm your Maynooth CS Assistant. Ask me anything about Computer Science modules!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -47,7 +50,6 @@ export default function Page() {
         throw new Error(error.detail || response.statusText);
       }
 
-
       const data = await response.json();
       const aiMessage: Message = {
         role: "assistant",
@@ -64,73 +66,78 @@ export default function Page() {
           content: `Sorry, something went wrong: ${err.message}`,
         },
       ]);
-    }
-    finally {
+    } finally {
       setLoading(false);
     }
   };
 
   return (
-      <div className="flex flex-col items-center h-screen w-full bg-gray-50">
-        <header className="w-full bg-blue-600 text-white p-4 text-center shadow-md">
-          <h1 className="text-xl font-bold">Maynooth CS Module Assistant</h1>
-        </header>
+    <div className="flex flex-col items-center h-screen w-full bg-gray-50">
+      <header className="w-full bg-blue-600 text-white p-4 text-center shadow-md">
+        <h1 className="text-xl font-bold">Maynooth CS Module Assistant</h1>
+      </header>
 
-        <div className="flex flex-col p-4 max-w-4xl w-full h-full">
-          {/* Messages container */}
-          <div className="flex-1 overflow-y-auto mb-4 bg-white rounded-lg shadow-inner p-4">
-            {messages.filter(m => m.role !== "system").map((message, i) => (
-                <div
-                    key={i}
-                    className={`flex mb-4 ${message.role === "user" ? "justify-end" : "justify-start"}`}
-                >
-                  <div
-                      className={`max-w-[80%] p-3 rounded-lg ${
-                          message.role === "user"
-                              ? "bg-blue-100 rounded-br-none"
-                              : "bg-green-100 rounded-bl-none"
-                      }`}
-                  >
-                    {message.content}
-                  </div>
-                </div>
-            ))}
-
-            {loading && (
-                <div className="flex justify-start mb-4">
-                  <div className="bg-yellow-100 p-3 rounded-lg rounded-bl-none animate-pulse">
-                    Thinking about your question...
-                  </div>
-                </div>
-            )}
-            <div ref={messagesEndRef} />
-          </div>
-
-          {/* Input form */}
-          <form onSubmit={sendMessage} className="flex gap-2">
-            <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Ask about CS modules like CS201, CS211..."
-                disabled={loading}
-            />
-            <button
-                type="submit"
-                disabled={loading}
-                className={`bg-blue-600 text-white px-6 py-3 rounded-lg transition ${
-                    loading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
+      <div className="flex flex-col p-4 max-w-4xl w-full h-full">
+        {/* Messages container */}
+        <div className="flex-1 overflow-y-auto mb-4 bg-white rounded-lg shadow-inner p-4">
+          {messages
+            .filter((m) => m.role !== "system")
+            .map((message, i) => (
+              <div
+                key={i}
+                className={`flex mb-4 ${
+                  message.role === "user" ? "justify-end" : "justify-start"
                 }`}
-            >
-              {loading ? "Sending..." : "Ask"}
-            </button>
-          </form>
+              >
+                <div
+                  className={`max-w-[80%] p-3 rounded-lg markdown ${
+                    message.role === "user"
+                      ? "bg-blue-100 rounded-br-none"
+                      : "bg-green-100 rounded-bl-none"
+                  }`}
+                >
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {message.content}
+                  </ReactMarkdown>
+                </div>
+              </div>
+            ))}{" "}
+          {loading && (
+            <div className="flex justify-start mb-4">
+              <div className="bg-yellow-100 p-3 rounded-lg rounded-bl-none animate-pulse">
+                Thinking about your question...
+              </div>
+            </div>
+          )}
+          <div ref={messagesEndRef} />
+        </div>
 
-          <div className="mt-2 text-center text-sm text-gray-500">
-            Ask about modules, professors, or course content at Maynooth University
-          </div>
+        {/* Input form */}
+        <form onSubmit={sendMessage} className="flex gap-2">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Ask about CS modules like CS201, CS211..."
+            disabled={loading}
+          />
+          <button
+            type="submit"
+            disabled={loading}
+            className={`bg-blue-600 text-white px-6 py-3 rounded-lg transition ${
+              loading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
+            }`}
+          >
+            {loading ? "Sending..." : "Ask"}
+          </button>
+        </form>
+
+        <div className="mt-2 text-center text-sm text-gray-500">
+          Ask about modules, professors, or course content at Maynooth
+          University
         </div>
       </div>
+    </div>
   );
 }

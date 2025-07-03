@@ -29,8 +29,6 @@ const topicsToModules = (x: TopicRelation, topics: string[]) => {
           }
         });
       }
-      console.log(Object.keys(entry[1]));
-      console.log(topic);
     });
     mainList.push(tempList);
     tempList = [];

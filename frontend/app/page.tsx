@@ -4,7 +4,7 @@ import module_json from "../module_info.json";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col md:mt-6 p-4 pb-20 items-center max-w-[1200px]">
+      <div className="flex flex-col md:mt-10 p-4 pb-20 items-center max-w-[1200px]">
         <h1 className="sm:text-[60px] text-[40px] font-bold sm:mt-8 text-center">
           Your Educational Compass
         </h1>

@@ -80,7 +80,7 @@ function Page() {
   return (
     <div className="flex flex-col w-full items-center">
       <div>
-        <form className="flex items-center gap-4">
+        <form className="flex flex-wrap justify-center items-center gap-4">
           <span>
             <label htmlFor="keyword">Keyword: </label>
             <input
@@ -123,7 +123,7 @@ function Page() {
           </span>
         </form>
       </div>
-      <div className="flex w-full p-4 justify-between flex-wrap">
+      <div className="flex w-full p-4 justify-around flex-wrap">
         {modules.map((module, i) => (
           <ModuleBlock key={i} code={module[0]} title={module[1].title} />
         ))}

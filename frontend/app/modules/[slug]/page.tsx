@@ -23,7 +23,7 @@ export default async function Page({
         <h2 className="text-3xl font-semibold text-center mb-2">
           {currentModule.scrapedModuleCodeFromPage}: {currentModule.title}
         </h2>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap justify-center gap-2">
           <div className="bg-gray-100 p-2 rounded-lg">
             Credits: {currentModule.credits}
           </div>

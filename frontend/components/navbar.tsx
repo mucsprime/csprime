@@ -12,9 +12,11 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="flex justify-between z-10 items-center mt-4 mb-4 p-4 max-w-[1100px] w-full">
@@ -31,19 +33,54 @@ function Navbar() {
       </Link>
       <div>
         <ul className="flex gap-2 hidden md:flex">
-          <Link href="/" className="p-2 rounded-sm hover:bg-gray-100">
+          <Link
+            href="/"
+            className={`p-2 rounded-sm  ${
+              pathname == "/"
+                ? "bg-black text-white hover:text-white"
+                : "hover:bg-gray-100"
+            }`}
+          >
             <li className="hover:cursor-pointer">Home</li>
           </Link>
-          <Link href="/modules" className="p-2 rounded-sm hover:bg-gray-100">
+          <Link
+            href="/modules"
+            className={`p-2 rounded-sm  ${
+              pathname.includes("modules")
+                ? "bg-black text-white hover:text-white"
+                : "hover:bg-gray-100"
+            }`}
+          >
             <li className="hover:cursor-pointer">Modules</li>
           </Link>
-          <Link href="/topics" className="p-2 rounded-sm hover:bg-gray-100">
+          <Link
+            href="/topics"
+            className={`p-2 rounded-sm  ${
+              pathname == "/topics"
+                ? "bg-black text-white hover:text-white"
+                : "hover:bg-gray-100"
+            }`}
+          >
             <li className="hover:cursor-pointer">Topics</li>
           </Link>
-          <Link href="/analytics" className="p-2 rounded-sm hover:bg-gray-100">
+          <Link
+            href="/analytics"
+            className={`p-2 rounded-sm  ${
+              pathname == "/analytics"
+                ? "bg-black text-white hover:text-white"
+                : "hover:bg-gray-100"
+            }`}
+          >
             <li className="hover:cursor-pointer">Analytics</li>
           </Link>
-          <Link href="/chat" className="p-2 rounded-sm hover:bg-gray-100">
+          <Link
+            href="/chat"
+            className={`p-2 rounded-sm  ${
+              pathname == "/chat"
+                ? "bg-black text-white hover:text-white"
+                : "hover:bg-gray-100"
+            }`}
+          >
             <li className="hover:cursor-pointer">Chat</li>
           </Link>
         </ul>

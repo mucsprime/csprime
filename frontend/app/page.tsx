@@ -30,7 +30,13 @@ export default function Home() {
             {Object.entries(module_json)
               .slice(0, 15)
               .map(([code, data]) => (
-                <ModuleBlock key={code} code={code} title={data.title} />
+                <ModuleBlock
+                  key={code}
+                  code={code}
+                  title={data.title}
+                  year={data.year}
+                  semester={data.semester}
+                />
                 //fff
               ))}
           </div>

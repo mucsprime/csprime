@@ -125,7 +125,13 @@ function Page() {
       </div>
       <div className="flex w-full p-4 justify-around flex-wrap">
         {modules.map((module, i) => (
-          <ModuleBlock key={i} code={module[0]} title={module[1].title} />
+          <ModuleBlock
+            key={i}
+            code={module[0]}
+            title={module[1].title}
+            year={module[1].year}
+            semester={module[1].semester}
+          />
         ))}
       </div>
     </div>

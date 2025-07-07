@@ -37,11 +37,11 @@ export default async function Page({
             Department: {currentModule.department}
           </div>
         </div>
-        <div className="p-8 mt-8 max-w-[1000px] w-full rounded-lg border-1 border-gray-200">
+        <div className="p-8 mt-8 max-w-[1000px] w-full rounded-lg border-1 border-gray-300">
           <h3 className="text-xl mb-2">Overview</h3>
           {currentModule.overview}
         </div>
-        <div className="p-8 mt-8 max-w-[1000px] w-full rounded-lg border-1 border-gray-200">
+        <div className="p-8 mt-8 max-w-[1000px] w-full rounded-lg border-1 border-gray-300">
           <h3 className="text-xl mb-2">Learning Outcomes</h3>
           <ul>
             {currentModule.learningOutcomes.map(
@@ -52,20 +52,22 @@ export default async function Page({
           </ul>
         </div>
         {moduleRelations && (
-          <div className="p-8 mt-8 max-w-[1000px] w-full rounded-lg border-1 border-gray-200">
+          <div className="px-8 py-4 mt-8 max-w-[1000px] mb-8 rounded-lg border-1 border-gray-300">
             <table>
               <thead>
                 <tr>
-                  <th className="text-xl font-medium mb-2">Topic</th>
-                  <th className="text-xl font-medium mb-2 text-center">
+                  <th className="text-lg font-medium mb-2 pb-2 text-left">
+                    Topic
+                  </th>
+                  <th className="text-lg font-medium mb-2 text-left pl-2 pb-2">
                     Related Modules
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {Object.entries(moduleRelations).map((entry) => (
-                  <tr key={entry[0]}>
-                    <td>{entry[0]}</td>
+                  <tr key={entry[0]} className="border-t-1 pb-8">
+                    <td className="border-r-1 pr-4">{entry[0]}</td>
                     <td className="flex flex-wrap">
                       {entry[1].map((relatedModule) => (
                         <Link

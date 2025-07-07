@@ -79,25 +79,29 @@ function Page() {
 
   return (
     <div className="flex flex-col w-full items-center">
-      <div>
-        <form className="flex flex-wrap justify-center items-center gap-4">
-          <span>
-            <label htmlFor="keyword">Keyword: </label>
+      <div className="flex justify-center w-4/5 sm:w-fit">
+        <form className="flex flex-col sm:flex-row flex-wrap px-8 py-2 mb-4 justify-center items-start sm:items-center gap-4 border-1 border-gray-300 shadow-md rounded-3xl">
+          <span className="flex flex-col sm:border-r-1">
+            <label htmlFor="keyword" className="font-semibold text-xs">
+              Keyword
+            </label>
             <input
               value={filter.keyword}
               name="keyword"
               type="text"
-              className="p-4 border-gray-200 border-1 rounded-lg outline-none"
-              placeholder="keyword"
+              className="border-gray-200 outline-none"
+              placeholder="Enter keyword"
               onChange={(e) => updateKeyword(e)}
             />
           </span>
-          <span>
-            <label htmlFor="year">Year: </label>
+          <span className="flex flex-col pr-4 sm:border-r-1">
+            <label htmlFor="year" className="font-semibold text-xs">
+              Year
+            </label>
             <select
               onChange={(e) => updateYear(e)}
               name="year"
-              className="w-[100px]"
+              className="w-[100px] outline-none"
               value={filter.year}
             >
               <option value={0}>All</option>
@@ -107,12 +111,14 @@ function Page() {
               <option value={4}>4</option>
             </select>
           </span>
-          <span>
-            <label htmlFor="semester">Semester: </label>
+          <span className="flex flex-col">
+            <label htmlFor="semester" className="font-semibold text-xs">
+              Semester
+            </label>
             <select
               onChange={(e) => updateSemester(e)}
               name="semester"
-              className="w-[100px]"
+              className="w-[100px] outline-none"
               value={filter.semester}
             >
               <option value={"0"}>All</option>

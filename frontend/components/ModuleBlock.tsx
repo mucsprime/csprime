@@ -35,14 +35,16 @@ function ModuleBlock({
   return (
     <Link
       href={`/modules/${code}`}
-      className="flex flex-col justify-around bg-white/60 border-gray-200 border-1 p-8 mb-8 rounded-2xl w-[32%] min-w-[300px] shadow-lg text-center"
+      className="flex flex-col justify-around bg-white/60 border-gray-300 border-1 p-4 mb-6 rounded-xl w-[32%] min-w-[300px] text-center"
     >
       <div className="flex flex-col items-center">
         <span className="font-bold">{code}</span>
-        <p>{title}</p>
+        <p className="text-gray-700 mb-4">{title}</p>
         <div className="flex gap-2">
-          <Badge variant="outline">{parseYear(year)}</Badge>
-          <Badge variant="outline">
+          <Badge variant="outline" className="text-gray-700">
+            {parseYear(year)}
+          </Badge>
+          <Badge variant="outline" className="text-gray-700">
             {semester != "Year-Long" ? `Semester ${semester}` : "Year-Long"}
           </Badge>
         </div>

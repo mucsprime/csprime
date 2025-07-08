@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDownIcon } from "lucide-react"
+import React, { ReactNode } from "react";
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { ChevronDownIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 function Accordion({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Root>) {
-  return <AccordionPrimitive.Root data-slot="accordion" {...props} />
+  return <AccordionPrimitive.Root data-slot="accordion" {...props} />;
 }
 
 function AccordionItem({
@@ -22,7 +22,7 @@ function AccordionItem({
       className={cn("border-b last:border-b-0", className)}
       {...props}
     />
-  )
+  );
 }
 
 function AccordionTrigger({
@@ -44,7 +44,7 @@ function AccordionTrigger({
         <ChevronDownIcon className="text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
-  )
+  );
 }
 
 function AccordionContent({
@@ -55,12 +55,78 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+      className="overflow-hidden text-sm w-full max-w-full"
       {...props}
     >
-      <div className={cn("pt-0 pb-4", className)}>{children}</div>
+      <div
+        className={cn(
+          "pt-0 pb-4 min-h-[56px] max-h-[120px] transition-all duration-200 overflow-y-auto w-full max-w-full break-words whitespace-pre-line",
+          className
+        )}
+      >
+        {children}
+      </div>
     </AccordionPrimitive.Content>
-  )
+  );
 }
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+// Simple custom Accordion implementation
+export function SimpleAccordion({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={cn("flex flex-col w-full max-w-xl", className)}>
+      {children}
+    </div>
+  );
+}
+
+export function SimpleAccordionItem({
+  question,
+  answer,
+  isOpen,
+  onClick,
+  className,
+  triggerClassName,
+  contentClassName,
+}: {
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onClick: () => void;
+  className?: string;
+  triggerClassName?: string;
+  contentClassName?: string;
+}) {
+  return (
+    <div className={cn("border-b w-full max-w-xl", className)}>
+      <button
+        className={cn(
+          "w-full text-left py-4 px-2 font-medium flex justify-between items-center focus:outline-none",
+          triggerClassName
+        )}
+        onClick={onClick}
+        type="button"
+      >
+        <span>{question}</span>
+        <span className="ml-2">{isOpen ? "-" : "+"}</span>
+      </button>
+      <div
+        className={cn(
+          `w-full max-w-xl transition-all duration-200 overflow-y-auto px-2 pt-0 pb-4 text-sm min-h-[56px] max-h-[120px] break-words whitespace-pre-line ${
+            isOpen ? "block" : "hidden"
+          }`,
+          contentClassName
+        )}
+      >
+        {answer}
+      </div>
+    </div>
+  );
+}
+
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };

@@ -10,6 +10,10 @@ export interface PieChartData {
 export interface BubbleChartData {
   name: string;
   value: number;
+  x?: number;
+  y?: number;
+  fx?: number | null;
+  fy?: number | null;
 }
 
 export interface GraphNode extends d3.SimulationNodeDatum {

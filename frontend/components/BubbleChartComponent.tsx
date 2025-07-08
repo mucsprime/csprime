@@ -50,7 +50,13 @@ const BubbleChartComponent: React.FC = () => {
       .attr("height", height);
     svg.selectAll("*").remove(); // Clear previous render
 
-    const processedData = bubbleData.map((d) => ({ ...d }));
+    // Spread out initial positions in a circle
+    const angleStep = (2 * Math.PI) / bubbleData.length;
+    const processedData = bubbleData.map((d, i) => ({
+      ...d,
+      x: width / 2 + Math.cos(i * angleStep) * (width * 0.25),
+      y: height / 2 + Math.sin(i * angleStep) * (height * 0.25),
+    }));
 
     const radiusScale = d3
       .scaleSqrt()
@@ -63,13 +69,17 @@ const BubbleChartComponent: React.FC = () => {
 
     simulationRef.current = d3
       .forceSimulation(processedData as d3.SimulationNodeDatum[])
-      .force("charge", d3.forceManyBody().strength(20))
+      .alphaDecay(0.08) // slower decay for gentler settling
+      .velocityDecay(0.5) // more friction, less jumpy
+      .force("charge", d3.forceManyBody().strength(2)) // much lower repulsion
       .force("center", d3.forceCenter(width / 2, height / 2))
-      .force("x", d3.forceX(width / 2).strength(0.05))
-      .force("y", d3.forceY(height / 2).strength(0.05))
+      .force("x", d3.forceX(width / 2).strength(0.08))
+      .force("y", d3.forceY(height / 2).strength(0.08))
       .force(
         "collision",
-        d3.forceCollide().radius((d: any) => radiusScale(d.value) + 5)
+        d3
+          .forceCollide()
+          .radius((d) => radiusScale((d as BubbleChartData).value) + 5)
       );
 
     const colorScale = d3.scaleOrdinal<string, string>().range(colors);
@@ -82,30 +92,47 @@ const BubbleChartComponent: React.FC = () => {
       .attr("class", "node")
       .style("cursor", "grab")
       .call(
-        d3
-          .drag<any, any>()
-          .on("start", (event: any, d: any) => {
-            if (!event.active)
-              simulationRef.current?.alphaTarget(0.3).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-          })
-          .on("drag", (event: any, d: any) => {
-            d.fx = event.x;
-            d.fy = event.y;
-          })
-          .on("end", (event: any, d: any) => {
-            if (!event.active) simulationRef.current?.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-          })
+        (d3.drag() as any)
+          .on(
+            "start",
+            (
+              event: d3.D3DragEvent<SVGGElement, BubbleChartData, unknown>,
+              d: BubbleChartData
+            ) => {
+              if (!event.active)
+                simulationRef.current?.alphaTarget(0.3).restart();
+              d.fx = d.x;
+              d.fy = d.y;
+            }
+          )
+          .on(
+            "drag",
+            (
+              event: d3.D3DragEvent<SVGGElement, BubbleChartData, unknown>,
+              d: BubbleChartData
+            ) => {
+              d.fx = event.x;
+              d.fy = event.y;
+            }
+          )
+          .on(
+            "end",
+            (
+              event: d3.D3DragEvent<SVGGElement, BubbleChartData, unknown>,
+              d: BubbleChartData
+            ) => {
+              if (!event.active) simulationRef.current?.alphaTarget(0);
+              d.fx = null;
+              d.fy = null;
+            }
+          )
       );
 
     node
       .append("circle")
       .attr("r", (d: BubbleChartData) => radiusScale(d.value))
-      .attr("fill", (d: any, i: number) => colorScale(i.toString()))
-      .style("stroke", (d: any, i: number) =>
+      .attr("fill", (d: BubbleChartData, i: number) => colorScale(i.toString()))
+      .style("stroke", (d: BubbleChartData, i: number) =>
         d3.color(colorScale(i.toString()))!.darker(0.5).toString()
       )
       .style("stroke-width", 2);
@@ -124,7 +151,15 @@ const BubbleChartComponent: React.FC = () => {
       .style("pointer-events", "none");
 
     simulationRef.current.on("tick", () => {
-      node.attr("transform", (d: any) => `translate(${d.x},${d.y})`);
+      node.attr("transform", (d: BubbleChartData) => {
+        // Clamp positions to keep bubbles on screen
+        const r = radiusScale(d.value);
+        const clampedX = Math.max(r, Math.min(width - r, d.x!));
+        const clampedY = Math.max(r, Math.min(height - r, d.y!));
+        d.x = clampedX;
+        d.y = clampedY;
+        return `translate(${clampedX},${clampedY})`;
+      });
     });
   }, []);
 

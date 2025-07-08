@@ -79,7 +79,7 @@ function Page() {
 
   return (
     <div className="flex flex-col w-full items-center">
-      <div className="flex justify-center w-4/5 sm:w-fit">
+      <div className="flex justify-center w-4/5 sm:w-fit mt-10">
         <form className="flex flex-col sm:flex-row flex-wrap px-8 py-2 mb-4 justify-center items-start sm:items-center gap-4 border-1 border-gray-300 shadow-md rounded-3xl">
           <span className="flex flex-col sm:border-r-1">
             <label htmlFor="keyword" className="font-semibold text-xs">

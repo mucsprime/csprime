@@ -13,82 +13,94 @@ import { PieChartData } from "../types";
 
 const pieData: PieChartData[] = [
   {
-    name: "Algorithms & Programming",
-    value: 400,
+    name: "Algorithms and Programming",
+    value: 8,
     color: "#0ea5e9",
-    modules: ["CS161", "CS162", "CS210", "CS264"],
-  },
-  {
-    name: "Software Engineering",
-    value: 380,
-    color: "#8b5cf6",
-    modules: ["CS310", "CS355", "CS401"],
+    modules: [
+      "CS161",
+      "CS162",
+      "CS130",
+      "CS210",
+      "CS230",
+      "CS211",
+      "CS310",
+      "CS424",
+    ],
   },
   {
     name: "Computer Systems",
-    value: 300,
+    value: 6,
     color: "#10b981",
-    modules: ["CS130", "CS211", "CS404"],
+    modules: ["CS171", "CS172", "CS220", "CS240", "CS433", "CS402"],
   },
   {
-    name: "Artificial Intelligence",
-    value: 300,
-    color: "#f97316",
-    modules: ["CS422", "CS356"],
-  },
-  {
-    name: "Networking & Security",
-    value: 349,
-    color: "#ef4444",
-    modules: ["CS417", "CS425"],
-  },
-  {
-    name: "Computing & Theory",
-    value: 200,
+    name: "Computing and Theory",
+    value: 6,
     color: "#eab308",
-    modules: ["CS171", "CS172"],
+    modules: ["CS355", "CS370", "CS430", "CS417", "CS431", "CS434"],
+  },
+  {
+    name: "Experimental or Other",
+    value: 5,
+    color: "#14b8a6",
+    modules: ["CS353", "CS362", "CS363", "MP472", "CS440"],
   },
   {
     name: "Maths",
-    value: 239,
+    value: 5,
     color: "#6366f1",
-    modules: ["MT101SC", "MT102SC", "MT113SC"],
+    modules: ["MT101SC", "MT102SC", "MT113SC", "MT201A", "ST221"],
   },
   {
-    name: "Vision & Graphics",
-    value: 210,
-    color: "#ec4899",
-    modules: ["CS410", "CS426"],
+    name: "Software Engineering",
+    value: 5,
+    color: "#8b5cf6",
+    modules: ["CS265", "CS280", "CS335", "CS264", "CS357"],
+  },
+  {
+    name: "Artificial Intelligence",
+    value: 2,
+    color: "#f97316",
+    modules: ["CS401", "CS404"],
   },
   {
     name: "Computing for the Arts",
-    value: 278,
+    value: 2,
     color: "#a855f7",
-    modules: ["CS416"],
+    modules: ["CS322", "CS423"],
   },
   {
-    name: "Robotics & Automation",
-    value: 150,
+    name: "Networking and Security",
+    value: 2,
+    color: "#ef4444",
+    modules: ["CS320", "CS416"],
+  },
+  {
+    name: "Robotics and Automation",
+    value: 2,
     color: "#64748b",
-    modules: ["CS423"],
-  },
-  {
-    name: "Experimental/Other",
-    value: 189,
-    color: "#14b8a6",
-    modules: ["CS434"],
+    modules: ["CS422", "CS427"],
   },
   {
     name: "Signal Processing",
-    value: 120,
+    value: 2,
     color: "#f43f5e",
-    modules: ["CS370"],
+    modules: ["CS356", "CS425"],
+  },
+  {
+    name: "Vision and Graphics",
+    value: 2,
+    color: "#ec4899",
+    modules: ["CS410", "CS426"],
   },
 ];
 
 const totalValue = pieData.reduce((acc, entry) => acc + entry.value, 0);
 
-const CustomTooltip: React.FC<any> = ({ active, payload }) => {
+const CustomTooltip: React.FC<{
+  active?: boolean;
+  payload?: Array<{ payload: PieChartData }>;
+}> = ({ active, payload }) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     const percentage = ((data.value / totalValue) * 100).toFixed(0);
@@ -104,26 +116,32 @@ const CustomTooltip: React.FC<any> = ({ active, payload }) => {
   return null;
 };
 
-const CustomLegend: React.FC<any> = (props) => {
+const CustomLegend: React.FC<{
+  payload?: Array<{ value: string; color: string }>;
+}> = (props) => {
   const { payload } = props;
   return (
     <ul className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2 mt-4 text-sm">
-      {payload.map((entry: any, index: number) => {
+      {payload?.map((entry, index: number) => {
         const dataItem = pieData.find((item) => item.name === entry.value);
         if (!dataItem) return null;
         const percentage = ((dataItem.value / totalValue) * 100).toFixed(0);
         return (
           <li
             key={`item-${index}`}
-            className="flex items-center space-x-2 truncate"
+            className="flex items-center space-x-2"
             title={`${entry.value} (${percentage}%)`}
           >
             <span
               className="w-3 h-3 rounded-full flex-shrink-0"
               style={{ backgroundColor: entry.color }}
             ></span>
-            <span className="text-slate-700">{entry.value}</span>
-            <span className="text-slate-500 text-xs">({percentage}%)</span>
+            <span className="text-slate-700 truncate min-w-0 flex-1">
+              {entry.value}
+            </span>
+            <span className="text-slate-500 text-xs flex-shrink-0">
+              ({percentage}%)
+            </span>
           </li>
         );
       })}

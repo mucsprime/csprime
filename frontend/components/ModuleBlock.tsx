@@ -35,7 +35,7 @@ function ModuleBlock({
   return (
     <Link
       href={`/modules/${code}`}
-      className="flex flex-col justify-around bg-white/60 border-gray-300 border-1 p-4 mb-6 rounded-xl w-[32%] min-w-[300px] text-center"
+      className="flex flex-col justify-around bg-white/60 border-gray-300 border-1 p-4 mb-6 rounded-xl w-full sm:w-[48%] md:w-[32%] lg:w-[31%] xl:w-[30%] min-w-[280px] max-w-[400px] text-center"
     >
       <div className="flex flex-col items-center">
         <span className="font-bold">{code}</span>

@@ -14,6 +14,25 @@ export interface BubbleChartData {
   y?: number;
   fx?: number | null;
   fy?: number | null;
+  modules?: ModuleDetail[];
+}
+
+export interface ModuleDetail {
+  code: string;
+  description: string;
+}
+
+export interface BarChartData {
+  name: string;
+  count: number;
+  color: string;
+}
+
+export interface TreemapData {
+  name: string;
+  size: number;
+  children?: TreemapData[];
+  color?: string;
 }
 
 export interface GraphNode extends d3.SimulationNodeDatum {

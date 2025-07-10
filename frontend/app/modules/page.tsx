@@ -129,7 +129,7 @@ function Page() {
           </span>
         </form>
       </div>
-      <div className="flex w-full p-4 justify-around flex-wrap">
+      <div className="flex w-full p-2 sm:p-4 justify-center sm:justify-around flex-wrap gap-4">
         {modules.map((module, i) => (
           <ModuleBlock
             key={i}

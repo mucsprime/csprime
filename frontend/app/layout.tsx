@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   authors: [{ name: "CSPrime Team" }],
   viewport: "width=device-width, initial-scale=1",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   openGraph: {
     title: "CSPrime - Your Educational Compass for Computer Science",

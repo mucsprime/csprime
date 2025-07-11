@@ -26,7 +26,9 @@ function Navbar() {
         className="flex items-center gap-3 hover:opacity-80 transition"
       >
         <GraduationCap size={28} className="text-black" />
-        <span className="text-xl font-extrabold tracking-tight">CSPrime</span>
+        <span className="text-xl font-extrabold pr-[10px] tracking-tight">
+          CSPrime
+        </span>
       </Link>
       <div>
         <ul className="flex gap-2 hidden md:flex items-center">
@@ -131,7 +133,7 @@ function Navbar() {
         id="mobile-menu"
         className={`flex md:hidden p-8 ${
           !isOpen && "hidden"
-        } fixed justify-between top-0 left-0 w-full border-b-1 border-gray-200 bg-white z-40`}
+        } fixed top-0 left-0 w-full border-b-1 border-gray-200 bg-white z-40`}
       >
         <ul className="flex flex-col gap-4 w-full">
           <Link href="/" onClick={() => setIsOpen(false)}>
@@ -179,7 +181,7 @@ function Navbar() {
           </SignedIn>
         </ul>
         <button
-          className="text-4xl hover:cursor-pointer p-2"
+          className="text-4xl hover:cursor-pointer px-4 py-2 absolute top-6 right-8"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Close mobile menu"
         >

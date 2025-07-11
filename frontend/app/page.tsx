@@ -88,7 +88,7 @@ export default function Home() {
             How CSPrime Works
           </h2>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
-            <div className="flex-1 max-w-xs text-center flex flex-col items-center">
+            <div className="flex-1 max-w-xs mx-auto text-center flex flex-col items-center">
               <div className="text-4xl mb-2">1️⃣</div>
               <h4 className="font-bold mb-1">Explore Modules & Topics</h4>
               <p className="text-gray-600 text-sm min-h-[48px] flex items-center justify-center">
@@ -96,7 +96,7 @@ export default function Home() {
                 module covers.
               </p>
             </div>
-            <div className="flex-1 max-w-xs text-center flex flex-col items-center">
+            <div className="flex-1 max-w-xs mx-auto text-center flex flex-col items-center">
               <div className="text-4xl mb-2">2️⃣</div>
               <h4 className="font-bold mb-1">Visualize Connections</h4>
               <p className="text-gray-600 text-sm min-h-[48px] flex items-center justify-center">
@@ -104,7 +104,7 @@ export default function Home() {
                 learning journey fits together.
               </p>
             </div>
-            <div className="flex-1 max-w-xs text-center flex flex-col items-center">
+            <div className="flex-1 max-w-xs mx-auto text-center flex flex-col items-center">
               <div className="text-4xl mb-2">3️⃣</div>
               <h4 className="font-bold mb-1">Get Instant Help</h4>
               <p className="text-gray-600 text-sm min-h-[48px] flex items-center justify-center">

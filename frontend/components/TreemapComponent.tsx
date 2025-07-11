@@ -55,7 +55,6 @@ const CustomTooltip: React.FC<{
     return (
       <div className="bg-slate-700/80 backdrop-blur-sm p-3 border border-slate-600 rounded-md shadow-lg">
         <p className="text-slate-200 font-semibold">{data.name}</p>
-        <p className="text-slate-400 text-sm">Importance: {data.size}</p>
       </div>
     );
   }

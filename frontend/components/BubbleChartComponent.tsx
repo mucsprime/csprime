@@ -269,7 +269,11 @@ const BubbleChartComponent: React.FC = () => {
       )
       .style("fill", "#fff")
       .style("font-weight", "600")
-      .style("pointer-events", "none");
+      .style("pointer-events", "none")
+      .style(
+        "text-shadow",
+        "1px 1px 2px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.8), 1px -1px 2px rgba(0,0,0,0.8), -1px 1px 2px rgba(0,0,0,0.8)"
+      );
 
     simulationRef.current.on("tick", () => {
       node.attr("transform", (d: BubbleChartData) => {

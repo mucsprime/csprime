@@ -146,13 +146,14 @@ const SkillsMatrixComponent: React.FC = () => {
                   selectedSkill === skill.skill ? null : skill.skill
                 )
               }
-              className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
+              className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium transition-colors ${
                 selectedSkill === skill.skill
                   ? "bg-blue-600 text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
-              {skill.skill}
+              <span className="hidden sm:inline">{skill.skill}</span>
+              <span className="sm:hidden">{skill.skill.split(" ")[0]}</span>
             </button>
           ))}
         </div>
@@ -228,26 +229,26 @@ const SkillsMatrixComponent: React.FC = () => {
         </table>
       </div>
 
-      <div className="mt-4 flex items-center gap-4 text-sm text-gray-600">
+      <div className="mt-4 flex flex-wrap items-center gap-2 sm:gap-4 text-sm text-gray-600">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <span>Critical (90%+)</span>
+          <span className="whitespace-nowrap">Critical (90%+)</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-orange-500"></div>
-          <span>Very High (80-89%)</span>
+          <span className="whitespace-nowrap">Very High (80-89%)</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <span>High (70-79%)</span>
+          <span className="whitespace-nowrap">High (70-79%)</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-          <span>Medium (60-69%)</span>
+          <span className="whitespace-nowrap">Medium (60-69%)</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-green-500"></div>
-          <span>Low (50-59%)</span>
+          <span className="whitespace-nowrap">Low (50-59%)</span>
         </div>
       </div>
     </div>

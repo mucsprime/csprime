@@ -118,12 +118,17 @@ function Navbar() {
           </SignedIn>
         </ul>
       </div>
-      <div className="text-3xl hover:cursor-pointer flex md:hidden">
-        <span onClick={() => setIsOpen((prev) => !prev)}>
-          <CiMenuBurger />
-        </span>
-      </div>
+      <button
+        className="text-3xl hover:cursor-pointer flex md:hidden p-2"
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-label="Toggle mobile menu"
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
+      >
+        <CiMenuBurger />
+      </button>
       <div
+        id="mobile-menu"
         className={`flex md:hidden p-8 ${
           !isOpen && "hidden"
         } fixed justify-between top-0 left-0 w-full border-b-1 border-gray-200 bg-white z-40`}
@@ -159,17 +164,27 @@ function Navbar() {
               Chat
             </li>
           </Link>
-          <li className="border-gray-400 border-1 py-2 px-4 rounded-lg">
-            Login
-          </li>
-          <li className="bg-black text-white py-2 px-4 rounded-lg">Sign Up</li>
+          <SignedOut>
+            <li className="border-gray-400 border-1 py-2 px-4 text-center rounded-lg">
+              <SignInButton />
+            </li>
+            <li className="bg-black text-white py-2 px-4 rounded-lg">
+              <SignUpButton />
+            </li>
+          </SignedOut>
+          <SignedIn>
+            <li className="px-4 py-2">
+              <UserButton />
+            </li>
+          </SignedIn>
         </ul>
-        <span
-          className="text-4xl hover:cursor-pointer"
+        <button
+          className="text-4xl hover:cursor-pointer p-2"
           onClick={() => setIsOpen((prev) => !prev)}
+          aria-label="Close mobile menu"
         >
           <IoIosClose />
-        </span>
+        </button>
       </div>
     </nav>
   );

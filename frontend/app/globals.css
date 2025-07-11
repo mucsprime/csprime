@@ -124,3 +124,81 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom dropdown styling */
+select {
+  background-color: white !important;
+}
+
+select option {
+  background-color: white !important;
+  color: #374151 !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+  border: none !important;
+}
+
+select option:hover {
+  background-color: #f9fafb !important;
+}
+
+select option:checked {
+  background-color: #f9fafb !important;
+  color: #374151 !important;
+}
+
+select option:focus {
+  background-color: #f9fafb !important;
+  color: #374151 !important;
+}
+
+/* For webkit browsers (Chrome, Safari) */
+select::-webkit-listbox {
+  background-color: white !important;
+  border: none !important;
+  padding: 4px 0 !important;
+  box-shadow: none !important;
+}
+
+select::-webkit-option {
+  background-color: white !important;
+  color: #374151 !important;
+  padding: 8px 12px !important;
+  margin: 2px 8px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+}
+
+select::-webkit-option:hover {
+  background-color: #f9fafb !important;
+}
+
+select::-webkit-option:checked {
+  background-color: #f9fafb !important;
+  color: #374151 !important;
+}
+
+select::-webkit-option:focus {
+  background-color: #f9fafb !important;
+  color: #374151 !important;
+}
+
+/* Remove all blue highlighting */
+select:focus {
+  outline: none !important;
+  border-color: #d1d5db !important;
+}
+
+select:focus option {
+  background-color: white !important;
+  color: #374151 !important;
+}
+
+/* Additional styling for the dropdown menu */
+select:focus::-webkit-listbox {
+  background-color: white !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}

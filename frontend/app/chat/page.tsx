@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 type Message = {
   role: "system" | "user" | "assistant";
@@ -57,13 +58,15 @@ export default function Page() {
       };
 
       setMessages((prev) => [...prev, aiMessage]);
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error("API Error:", err);
+      const errorMessage =
+        err instanceof Error ? err.message : "Unknown error occurred";
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: `Sorry, something went wrong: ${err.message}`,
+          content: `Sorry, something went wrong: ${errorMessage}`,
         },
       ]);
     } finally {
@@ -104,8 +107,9 @@ export default function Page() {
             ))}{" "}
           {loading && (
             <div className="flex justify-start mb-4">
-              <div className="bg-yellow-100 p-3 rounded-lg rounded-bl-none animate-pulse">
-                Thinking about your question...
+              <div className="bg-yellow-100 p-3 rounded-lg rounded-bl-none flex items-center gap-2">
+                <LoadingSpinner size="sm" />
+                <span>Thinking about your question...</span>
               </div>
             </div>
           )}

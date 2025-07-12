@@ -208,7 +208,7 @@ const SkillsMatrixComponent: React.FC = () => {
                     {skill.modules.map((module) => (
                       <span
                         key={module.code}
-                        className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                        className="inline-block bg-blue-100 text-blue-800 text-xs px-1.5 sm:px-2 py-1 rounded whitespace-nowrap"
                       >
                         {module.code}
                       </span>
@@ -229,25 +229,25 @@ const SkillsMatrixComponent: React.FC = () => {
         </table>
       </div>
 
-      <div className="mt-4 flex flex-wrap items-center gap-2 sm:gap-4 text-sm text-gray-600">
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
+      <div className="mt-4 flex flex-wrap items-center gap-1.5 sm:gap-2 md:gap-4 text-xs sm:text-sm text-gray-600">
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-red-500"></div>
           <span className="whitespace-nowrap">Critical (90%+)</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-orange-500"></div>
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-orange-500"></div>
           <span className="whitespace-nowrap">Very High (80-89%)</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-yellow-500"></div>
           <span className="whitespace-nowrap">High (70-79%)</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-blue-500"></div>
           <span className="whitespace-nowrap">Medium (60-69%)</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-green-500"></div>
           <span className="whitespace-nowrap">Low (50-59%)</span>
         </div>
       </div>

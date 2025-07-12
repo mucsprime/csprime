@@ -67,8 +67,8 @@ export default async function Page({
           </h2>
 
           {/* Module Info Cards */}
-          <div className="flex justify-center gap-2 sm:gap-3 mb-6">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 px-3 py-2 rounded-md border border-blue-200">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 px-2 sm:px-3 py-2 rounded-md border border-blue-200 min-w-0 flex-shrink-0">
               <div className="text-xs font-medium text-blue-800 mb-0.5">
                 Credits
               </div>
@@ -76,7 +76,7 @@ export default async function Page({
                 {currentModule.credits}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 px-3 py-2 rounded-md border border-green-200">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 px-2 sm:px-3 py-2 rounded-md border border-green-200 min-w-0 flex-shrink-0">
               <div className="text-xs font-medium text-green-800 mb-0.5">
                 Year
               </div>
@@ -84,7 +84,7 @@ export default async function Page({
                 {currentModule.year}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 px-3 py-2 rounded-md border border-purple-200">
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 px-2 sm:px-3 py-2 rounded-md border border-purple-200 min-w-0 flex-shrink-0">
               <div className="text-xs font-medium text-purple-800 mb-0.5">
                 Semester
               </div>
@@ -92,7 +92,7 @@ export default async function Page({
                 {currentModule.semester}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 px-3 py-2 rounded-md border border-orange-200">
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 px-2 sm:px-3 py-2 rounded-md border border-orange-200 min-w-0 flex-shrink-0">
               <div className="text-xs font-medium text-orange-800 mb-0.5">
                 Department
               </div>
@@ -161,7 +161,7 @@ export default async function Page({
                       <Link
                         href={`/modules/${relatedModule}`}
                         key={entry[0] + relatedModule}
-                        className="px-2.5 py-1.5 bg-gradient-to-r from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border border-purple-200 rounded-md text-xs font-medium text-purple-800 transition-colors duration-200"
+                        className="px-2 py-1 sm:px-2.5 sm:py-1.5 bg-gradient-to-r from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border border-purple-200 rounded-md text-xs font-medium text-purple-800 transition-colors duration-200 whitespace-nowrap"
                       >
                         {relatedModule}
                       </Link>

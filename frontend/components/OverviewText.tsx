@@ -8,9 +8,9 @@ interface OverviewTextProps {
 
 const OverviewText: React.FC<OverviewTextProps> = ({ text }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const shouldTruncate = text.length > 800;
+  const shouldTruncate = text.length > 480;
   const displayText =
-    shouldTruncate && !isExpanded ? text.substring(0, 800) + "..." : text;
+    shouldTruncate && !isExpanded ? text.substring(0, 480) + "..." : text;
 
   if (!shouldTruncate) {
     return <div>{text}</div>;

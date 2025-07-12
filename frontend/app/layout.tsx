@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   keywords:
     "computer science, modules, Maynooth University, CS education, learning platform",
   authors: [{ name: "CSPrime Team" }],
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",

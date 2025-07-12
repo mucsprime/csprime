@@ -98,8 +98,8 @@ function Page() {
               {topics[selectedIndex]}
             </h3>
             <p className="text-gray-600 mb-8">
-              The following modules are related to the "{topics[selectedIndex]}"
-              topic.
+              The following modules are related to the &quot;
+              {topics[selectedIndex]}&quot; topic.
             </p>
             <h4 className="text-xl font-semibold mb-4 text-gray-800">
               Related Modules

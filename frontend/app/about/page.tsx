@@ -135,8 +135,8 @@ function Page() {
         <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border border-gray-200">
           <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
           <p className="text-gray-600 mb-4">
-            Have questions, suggestions, or feedback? We'd love to hear from
-            you!
+            Have questions, suggestions, or feedback? We&apos;d love to hear
+            from you!
           </p>
           <p className="text-sm text-gray-500">
             CSPrime is designed and maintained for the Computer Science

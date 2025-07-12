@@ -213,6 +213,7 @@ const BubbleChartComponent: React.FC = () => {
       .attr("class", "node")
       .style("cursor", "grab")
       .call(
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (d3.drag() as any)
           .on(
             "start",

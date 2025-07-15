@@ -48,3 +48,6 @@ pip-delete-this-directory.txt
 
 # FastAPI Swagger cache (if used)
 *.sqlite3
+
+# Secret files
+.env

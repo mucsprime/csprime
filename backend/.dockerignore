@@ -1,0 +1,22 @@
+# Python cache and build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secret files
+.env
+
+# Git and editor settings
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Logs or DBs
+*.db
+*.log
+*.sqlite
+
+# Frontend directory (exclude from backend image)
+../frontend/

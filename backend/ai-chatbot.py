@@ -7,7 +7,10 @@ import requests
 import json
 from pathlib import Path
 from uuid import uuid4
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Initialize FastAPI app
 app = FastAPI()
 
@@ -24,9 +27,9 @@ app.add_middleware(
 chat_sessions = {}
 
 # API keys
-GEMINI_API_KEY = ""
-SEARCH_API_KEY = ""
-SEARCH_ENGINE_ID = ""
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+SEARCH_API_KEY = os.getenv("SEARCH_API_KEY")
+SEARCH_ENGINE_ID = os.getenv("SEARCH_ENGINE_ID")
 
 class Question(BaseModel):
     query: str

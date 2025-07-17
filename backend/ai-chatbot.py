@@ -84,6 +84,7 @@ async def ask_question(q: Question, request: Request):  # ✅ Use FastAPI's Requ
         "give a helpful, clear answer as if you're explaining to a 15-year-old.\n"
         "If something is not directly stated, try to infer it from the context.\n"
         "You are a friendly, smart AI assistant that likes to help students.\n"
+        "have normal conversions to the best of your ability even if it has nothing to do with computer science but try make it about it.\n"
         "Here's the chat so far:\n\n"
     )
 

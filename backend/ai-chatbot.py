@@ -15,6 +15,10 @@ load_dotenv()
 app = FastAPI()
 
 # Allow CORS for all origins (for frontend access)
+origins = [
+    "http://localhost:3000",  # For local development
+    "https://csprime.vercel.app"  # Your production frontend
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

@@ -1,27 +1,27 @@
 FROM python:3.11-slim
 
-# Set environment variables
+# Prevents Python from writing .pyc files and buffering stdout
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies
+# Install build tools
 RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Python dependencies
+# Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy your app code
 COPY . .
 
-# Expose port
+# Expose FastAPI's port
 EXPOSE 8000
 
-# Run application (using Gunicorn for production)
+# Run the app using Gunicorn with Uvicorn workers
 CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "ai-chatbot:app", "--bind", "0.0.0.0:8000"]

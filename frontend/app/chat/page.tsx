@@ -47,7 +47,7 @@ export default function Page() {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setLoading(true);
-
+//h
     try {
       const response = await fetch("https://cs-prime-backend-4.onrender.com/ask", {
         method: "POST",

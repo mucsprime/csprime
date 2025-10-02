@@ -49,7 +49,7 @@ export default function Page() {
     setLoading(true);
 //
     try {
-      const response = await fetch("https://cs-prime-backend-4.onrender.com/ask", {
+      const response = await fetch("https://cs-prime-backend-5.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
